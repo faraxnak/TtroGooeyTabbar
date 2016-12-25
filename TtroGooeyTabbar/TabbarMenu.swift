@@ -10,7 +10,7 @@ import UIKit
 import EasyPeasy
 import PayWandBasicElements
 
-protocol TabbarMenuDelegate : NSObjectProtocol {
+public protocol TabbarMenuDelegate : NSObjectProtocol {
 
     func tabbarMenu(menuIndex tabbarMenu : TabbarMenu) -> Int
     
@@ -23,7 +23,7 @@ protocol TabbarMenuDelegate : NSObjectProtocol {
     func tabBarMenu(menuItemsDidDisappear tabbarMenu : TabbarMenu)
 }
 
-class TabbarMenu: UIView{
+public class TabbarMenu: UIView{
     
     var opened : Bool = false
     
@@ -50,12 +50,12 @@ class TabbarMenu: UIView{
     
     var items = [GooeyTabbarMenuItem]()
     
-    var delegate : TabbarMenuDelegate!
+    public var delegate : TabbarMenuDelegate!
     
     var tabNames = [String]()
     var tabIcons = [UIImage?]()
     
-    init(tabbarHeight : CGFloat, superVC : UIViewController, tabNames : [String], tabIcons : [UIImage?])
+    public init(tabbarHeight : CGFloat, superVC : UIViewController, tabNames : [String], tabIcons : [UIImage?])
     {
         tabbarheight = tabbarHeight
         terminalFrame = CGRect(x: 0, y: topSpace, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
@@ -70,16 +70,16 @@ class TabbarMenu: UIView{
         self.tabNames = tabNames
         self.tabIcons = tabIcons
         setUpViews()
-        initButtons()
+        //initButtons()
     }
     
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     
-    override func draw(_ rect: CGRect)
+    override public func draw(_ rect: CGRect)
     {
         let path = UIBezierPath()
         
@@ -258,7 +258,7 @@ class TabbarMenu: UIView{
 //MARK add menu buttons
 extension TabbarMenu {
     
-    func initButtons(){
+    public func initButtons(){
         for i in 0..<delegate.tabbarMenu(numberOfMenuItems: self) {
             let item = GooeyTabbarMenuItem(name: tabNames[i], icon: tabIcons[i], onTap: {
                 if (self.opened){
@@ -331,6 +331,10 @@ extension TabbarMenu {
                     self.delegate.tabBarMenu(menuItemsDidDisappear: self)
             })
         }
+    }
+    
+    public func animateMenu(){
+        animateButton?.animate()
     }
 }
 
