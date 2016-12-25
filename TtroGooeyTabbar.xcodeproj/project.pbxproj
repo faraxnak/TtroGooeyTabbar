@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7562DE791E0FD15A009F4EA9 /* TtroGooeyTabbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7562DE771E0FD15A009F4EA9 /* TtroGooeyTabbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7562DE821E0FD173009F4EA9 /* TabbarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562DE7F1E0FD173009F4EA9 /* TabbarMenu.swift */; };
+		7562DE831E0FD173009F4EA9 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562DE801E0FD173009F4EA9 /* AnimatedButton.swift */; };
+		7562DE841E0FD173009F4EA9 /* GooeyTabbarMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562DE811E0FD173009F4EA9 /* GooeyTabbarMenuItem.swift */; };
+		95D98740B2E975CAEB1ED765 /* Pods_TtroGooeyTabbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190978881EC0A55E142A6CCD /* Pods_TtroGooeyTabbar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02201B7789D0C6EB2E0733F4 /* Pods-TtroGooeyTabbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroGooeyTabbar.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroGooeyTabbar/Pods-TtroGooeyTabbar.release.xcconfig"; sourceTree = "<group>"; };
+		190978881EC0A55E142A6CCD /* Pods_TtroGooeyTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroGooeyTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9D556EF63C737276FF3644 /* Pods-TtroGooeyTabbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroGooeyTabbar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TtroGooeyTabbar/Pods-TtroGooeyTabbar.debug.xcconfig"; sourceTree = "<group>"; };
 		7562DE741E0FD15A009F4EA9 /* TtroGooeyTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TtroGooeyTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7562DE771E0FD15A009F4EA9 /* TtroGooeyTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TtroGooeyTabbar.h; sourceTree = "<group>"; };
 		7562DE781E0FD15A009F4EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7562DE7F1E0FD173009F4EA9 /* TabbarMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarMenu.swift; sourceTree = "<group>"; };
+		7562DE801E0FD173009F4EA9 /* AnimatedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
+		7562DE811E0FD173009F4EA9 /* GooeyTabbarMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooeyTabbarMenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D98740B2E975CAEB1ED765 /* Pods_TtroGooeyTabbar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		089DD453A87FA1DE5F04FC93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C9D556EF63C737276FF3644 /* Pods-TtroGooeyTabbar.debug.xcconfig */,
+				02201B7789D0C6EB2E0733F4 /* Pods-TtroGooeyTabbar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7562DE6A1E0FD15A009F4EA9 = {
 			isa = PBXGroup;
 			children = (
 				7562DE761E0FD15A009F4EA9 /* TtroGooeyTabbar */,
 				7562DE751E0FD15A009F4EA9 /* Products */,
+				089DD453A87FA1DE5F04FC93 /* Pods */,
+				BAA2BCD180BB33D2C8130E04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,9 +69,20 @@
 			isa = PBXGroup;
 			children = (
 				7562DE771E0FD15A009F4EA9 /* TtroGooeyTabbar.h */,
+				7562DE7F1E0FD173009F4EA9 /* TabbarMenu.swift */,
+				7562DE801E0FD173009F4EA9 /* AnimatedButton.swift */,
+				7562DE811E0FD173009F4EA9 /* GooeyTabbarMenuItem.swift */,
 				7562DE781E0FD15A009F4EA9 /* Info.plist */,
 			);
 			path = TtroGooeyTabbar;
+			sourceTree = "<group>";
+		};
+		BAA2BCD180BB33D2C8130E04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				190978881EC0A55E142A6CCD /* Pods_TtroGooeyTabbar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7562DE7C1E0FD15A009F4EA9 /* Build configuration list for PBXNativeTarget "TtroGooeyTabbar" */;
 			buildPhases = (
+				AA777BD51F7A4B68AB6514DF /* [CP] Check Pods Manifest.lock */,
 				7562DE6F1E0FD15A009F4EA9 /* Sources */,
 				7562DE701E0FD15A009F4EA9 /* Frameworks */,
 				7562DE711E0FD15A009F4EA9 /* Headers */,
 				7562DE721E0FD15A009F4EA9 /* Resources */,
+				B6BB69457844A6180B9A910B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +131,7 @@
 					7562DE731E0FD15A009F4EA9 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = F53V3ZJV96;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,11 +163,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AA777BD51F7A4B68AB6514DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6BB69457844A6180B9A910B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TtroGooeyTabbar/Pods-TtroGooeyTabbar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7562DE6F1E0FD15A009F4EA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7562DE841E0FD173009F4EA9 /* GooeyTabbarMenuItem.swift in Sources */,
+				7562DE831E0FD173009F4EA9 /* AnimatedButton.swift in Sources */,
+				7562DE821E0FD173009F4EA9 /* TabbarMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +311,9 @@
 		};
 		7562DE7D1E0FD15A009F4EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9D556EF63C737276FF3644 /* Pods-TtroGooeyTabbar.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
@@ -252,13 +326,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.TtroGooeyTabbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		7562DE7E1E0FD15A009F4EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02201B7789D0C6EB2E0733F4 /* Pods-TtroGooeyTabbar.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
