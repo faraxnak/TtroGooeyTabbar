@@ -15,6 +15,7 @@ class AnimatedButton: UIButton, CAAnimationDelegate
     
     fileprivate var firstLine : CALayer!
     fileprivate var secondLine : CALayer!
+    fileprivate var thirdLine : CALayer!
     var animating : Bool = false
     /// 是否打开
     fileprivate var opened : Bool = false
@@ -33,16 +34,22 @@ class AnimatedButton: UIButton, CAAnimationDelegate
     
     fileprivate func setUpLines() {
         firstLine = CALayer()
-        firstLine.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2 - 5)
+        firstLine.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2 - 10)
         firstLine.bounds = CGRect(x: 0, y: 0, width: self.frame.width/2, height: 3)
         setLineSetting(firstLine)
         self.layer.addSublayer(firstLine)
         
         secondLine = CALayer()
-        secondLine.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2 + 5)
+        secondLine.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2 + 10)
         secondLine.bounds = CGRect(x: 0, y: 0, width: self.frame.width/2, height: 3)
         setLineSetting(secondLine)
         self.layer.addSublayer(secondLine)
+        
+        thirdLine = CALayer()
+        thirdLine.position = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
+        thirdLine.bounds = CGRect(x: 0, y: 0, width: self.frame.width/2, height: 3)
+        setLineSetting(thirdLine)
+        self.layer.addSublayer(thirdLine)
         
         self.addTarget(self, action: #selector(self.animate), for: .touchUpInside)
     }
@@ -69,7 +76,7 @@ class AnimatedButton: UIButton, CAAnimationDelegate
             moveUp.duration = 0.3
             moveUp.delegate = self
             moveUp.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-            moveUp.toValue = -5.0
+            moveUp.toValue = -10.0
             moveUp.fillMode = kCAFillModeForwards
             moveUp.isRemovedOnCompletion = false
             secondLine.add(moveUp, forKey: "moveUp_2")
@@ -78,10 +85,20 @@ class AnimatedButton: UIButton, CAAnimationDelegate
             moveDown.duration = 0.3
             moveDown.delegate = self
             moveDown.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-            moveDown.toValue = 5.0
+            moveDown.toValue = 10.0
             moveDown.fillMode = kCAFillModeForwards
             moveDown.isRemovedOnCompletion = false
             firstLine.add(moveDown, forKey: "moveDown_1")
+            
+            let fade = CABasicAnimation(keyPath: "opacity")
+            fade.duration = 0.3
+            fade.delegate = self
+            fade.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+            fade.toValue = 0
+            fade.fromValue = 1
+            fade.fillMode = kCAFillModeForwards
+            fade.isRemovedOnCompletion = false
+            thirdLine.add(fade, forKey: "fadeOut")
             
         }else{
             opened = false
@@ -103,6 +120,16 @@ class AnimatedButton: UIButton, CAAnimationDelegate
             rotation_first.isRemovedOnCompletion = false
             rotation_first.delegate = self
             firstLine.add(rotation_first, forKey: "rotation_first_close")
+            
+            let fade = CABasicAnimation(keyPath: "opacity")
+            fade.duration = 0.3
+            fade.delegate = self
+            fade.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+            fade.toValue = 1
+            fade.fromValue = 0
+            fade.fillMode = kCAFillModeForwards
+            fade.isRemovedOnCompletion = false
+            thirdLine.add(fade, forKey: "fadeIn")
             
         }
         

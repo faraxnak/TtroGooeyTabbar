@@ -1,0 +1,6 @@
+framework module PayWandBasicElements {
+  umbrella header "PayWandBasicElements-umbrella.h"
+
+  export *
+  module * { export * }
+}

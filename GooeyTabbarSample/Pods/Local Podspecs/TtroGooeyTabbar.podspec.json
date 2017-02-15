@@ -1,0 +1,30 @@
+{
+  "name": "TtroGooeyTabbar",
+  "version": "0.0.1",
+  "summary": "TtroGooeyTabbar based on design in dribbble",
+  "description": "TtroGooeyTabbar based on design in dribbble and github code 'https://github.com/KittenYang/GooeyTabbar'",
+  "homepage": "https://github.com/faraxnak/TtroGooeyTabbar",
+  "license": {
+    "type": "MIT",
+    "file": "MIT License"
+  },
+  "authors": {
+    "faraxnak": ""
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/faraxnak/TtroGooeyTabbar.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "TtroGooeyTabbar/**/*.{swift}",
+  "dependencies": {
+    "EasyPeasy": [
+
+    ],
+    "PayWandBasicElements": [
+
+    ]
+  }
+}

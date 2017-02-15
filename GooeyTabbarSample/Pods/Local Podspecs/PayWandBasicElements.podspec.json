@@ -1,0 +1,33 @@
+{
+  "name": "PayWandBasicElements",
+  "version": "0.0.6",
+  "summary": "PayWandBasicElements used in PayWand wallet.",
+  "description": "Basic elements used in Paywand, such as TtroButton or TtroLable",
+  "homepage": "https://github.com/faraxnak/PayWandBasicElements",
+  "license": {
+    "type": "MIT",
+    "file": "MIT License"
+  },
+  "authors": {
+    "faraxnak": ""
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/faraxnak/PayWandBasicElements.git",
+    "tag": "0.0.6"
+  },
+  "source_files": "PayWandBasicElements/**/*.{swift}",
+  "dependencies": {
+    "EasyPeasy": [
+      "~> 1.4"
+    ],
+    "SwiftyButton": [
+      "~> 0.5.0"
+    ],
+    "UIColor_Hex_Swift": [
+
+    ]
+  }
+}

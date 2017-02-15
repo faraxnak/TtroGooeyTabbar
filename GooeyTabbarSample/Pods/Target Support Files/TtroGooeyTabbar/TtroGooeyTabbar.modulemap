@@ -1,0 +1,6 @@
+framework module TtroGooeyTabbar {
+  umbrella header "TtroGooeyTabbar-umbrella.h"
+
+  export *
+  module * { export * }
+}

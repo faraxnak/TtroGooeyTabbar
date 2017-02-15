@@ -1,0 +1,2014 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030D441EF7561E9AEEF329E3C0434D2B /* APCustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207270AAF9A8C89339E27F7140718BAE /* APCustomBlurView.swift */; };
+		0768890904945343C17C77E9D5AE4D3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */; };
+		0DC98CD86D69D7E824DC8A52602CE731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */; };
+		0DD46A9876D07B79D473C6D3FC4946D2 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F03EC910C4A924E9D0B80BABBD497B81 /* NSArray+PureLayout.m */; };
+		0E4D484CDC66423F39D398ED28B9A37F /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807D8B0E6F29C19627A5E83B22601D08 /* DimensionAttribute.swift */; };
+		1817EE1F1830A17F90E40F26068728C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */; };
+		1852FB3D090CE6BC4E82D5E6C4B30592 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C26394A4F45EB2BCF2EA4016DEF2EC /* UIKit.framework */; };
+		1C3BF79F0332D9CD83DE6E2B37941C6D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59926DCEF77984C0936B7EF4C7E86A /* UIColorExtension.swift */; };
+		1D2FF4D810821FA697B82E9BE08B029F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF802CE58F570F2C0C79A1D14B17DB /* Item.swift */; };
+		1EFA38A9B401515DEA501D1CDC0A8EB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F79DCAB776A889FACEE36B84742ED /* Extensions.swift */; };
+		1F98403FA7386FBD5C04706DA198E178 /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A9AB3C56125A54104528B895AF50F /* PositionAttribute+AppKit.swift */; };
+		2307F639A41257AE81499048D8F87647 /* Pods-GooeyTabbarSampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7133490AC5C88539651D1E8DBF7D0C /* Pods-GooeyTabbarSampleTests-dummy.m */; };
+		238EDC1AB26BE7C697EF58F21B949C88 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA1E23324DF9B3EF08555A06DF0EF77 /* EasyPeasy-dummy.m */; };
+		2422F1C5ED696FBFE3C9CCC92F23A8E3 /* SwiftyButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2A1D8A0A9ECF22C303719D7483BBB2 /* SwiftyButton.framework */; };
+		2F2CB06048F97B921EDA46856CE8B8CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */; };
+		31F60DBB6662B43BB7182A94B1063E40 /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663E4B5C2A5D515F27E78F56619B3C /* CompoundAttribute.swift */; };
+		32A5CF7C9046F0D677E1D6DFF66EF549 /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A686346CE2E9EC65BA60FB32D4E57F9B /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3474E4E655382B527D799C55021A3567 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B82A4666AC0783C10B5482F550525 /* Attribute.swift */; };
+		35550F0F2D3072F048821AA8567F7C14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C26394A4F45EB2BCF2EA4016DEF2EC /* UIKit.framework */; };
+		42DDC034671649DDD83A834774825CBB /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE82743A329FC0E4CD0AD38ABE5DFF5 /* PositionAttribute.swift */; };
+		44B2644538FBA736963EE6D7FC685A1A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD48D6CE3F5F90CA57A87AE38F246E3 /* Constant.swift */; };
+		48AD84F7956F1A5E5DABAD3114576032 /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2556DFDDEE935120FC39A07BB4DF3EA /* UIView+Easy.swift */; };
+		528852BBA10BDD4CF993006141B60763 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF8ED924A9E56C1E60671F9CF3272BF /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B877E31E2CC41C2E0DC6F73D0451B3 /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2AF3219A55DFF79A833A6CD71A6705 /* SwiftyButton-dummy.m */; };
+		55C78A8925CC7E1F2B5194398B914833 /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15177EFDC72809A153511C0ED7C7391B /* Item+AppKit.swift */; };
+		584B53C655CCC4AF7C7F44A174D34F40 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B9CD36C3FDB6263A5719197040554 /* DimensionAttribute+UIKit.swift */; };
+		5AC48C172934C77A2C2F6B8E9186CDB2 /* TtroLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDABA2A34811EBE4EDA0E59A799BF9E /* TtroLabel.swift */; };
+		61A5DBA8B391FC6F8FCB55A6DF698272 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA92B83CD3D32B0FD5DF2A7CE3143CF /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		637AECF468E9AFA67663A6FE12D670B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */; };
+		648EFEC4186BA6BA3818656A4969416A /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FD98FFF43FD4ADAC8415C39FE38D8877 /* ALView+PureLayout.m */; };
+		64CCA69A19DF0C1ADFC5770FA0373290 /* TtroGooeyTabbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F95679AB7C6F16FADC442117A47B83EB /* TtroGooeyTabbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFB4E22A96B1FD008C5720D8E6EAEED /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D04B24893CA482755C00E4B6C4EE47F /* SwiftyButton.swift */; };
+		6CF19F43F440688B7AEFF1DCC11AA07E /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CC9D6CD2CE40B4206BBBF241367594 /* AnimatedButton.swift */; };
+		6E34BDBD6E1A790FB1DF9F6F1E933D6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */; };
+		7FD80237B2B9D85C9B5FAA2B95DADF7F /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26715E4823430C20A5D2C3B5D71294B1 /* ReferenceAttribute.swift */; };
+		8103529CB0B7DAB64A453C34B4263BD7 /* PayWandBasicElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317EE26766F887BB55EE1D28F345815B /* PayWandBasicElements.framework */; };
+		883A058B9815B3CFD89DDFDB1CAA0DA2 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 24907F57042E53F9BDAB6437FFECEDEF /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CB4FD30B0E4C10C3449F7F0263D1537 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC98C9B59DAC5F133333539ED3A575E /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CCEBFA18F780D4BA8DB378EAF7076A2 /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623F8AE9AB8B6E2914A330730FBEF150 /* EasyPeasy.framework */; };
+		8E0E660019420B111D1B730A20D55AAE /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F2729EF0F4119520142499987156E /* UILayoutGuide+Easy.swift */; };
+		8E9360C02A77DCA0D1F9D8415CF059AF /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1F8CAB187828CEB42E110B2DB0B98 /* SwiftyCustomContentButton.swift */; };
+		9053EBA2CB510BFE30A7B32C12B8070E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = F991D62C0A9AC9BB8E05DD809A8F7775 /* Node.swift */; };
+		9567E721A36CB9E3120FA792D02F6912 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */; };
+		9959B5B2C4E9177E02C229C00C7EFE61 /* GooeyTabbarMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6A03EB60DE382EF75996C2D932212 /* GooeyTabbarMenuItem.swift */; };
+		9D5800496526AA7608455476C53AE0A6 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E978873855136B75535D8A5439F8F12 /* Priority.swift */; };
+		A2290100C6F4E775A45B43418B5B0502 /* TtroGooeyTabbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78255E6745FCFE4D6EC9CDDF16B3425B /* TtroGooeyTabbar-dummy.m */; };
+		A2E5A6728F7ECF13B73FA7253FB4EA47 /* SwiftyButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2A1D8A0A9ECF22C303719D7483BBB2 /* SwiftyButton.framework */; };
+		A3F6E4C54884F1E28AF85795ACB1FB64 /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8CE1B502B7AE94D67D33F64750272B /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A467CC96846ACE51BD11C802B5D30634 /* Pods-GooeyTabbarSampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC98B009F0A4C165FB60AEC676DEE262 /* Pods-GooeyTabbarSampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5F56CCEAD85BF57AF7D00B2B34F1729 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0344E2AC9A91ECB47535FE07773AAF /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61A54646708C458650EC61D0B0D6512 /* SwiftyButton+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA63E48018BF4194BE50FC3687E5D63 /* SwiftyButton+ResizableImage.swift */; };
+		A7CC295E4383A5F0A07EA42CAE243276 /* PayWandBasicElements-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC9DA5C34BE0A5FB9DBC527DE814170 /* PayWandBasicElements-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADB5F85D3938325A09BDD263660F8C82 /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F65D44E396A19FD3E7284FE55AE5B6 /* UIColor_Hex_Swift.framework */; };
+		B0B37F76060CCD8CB05A9958CBB9C143 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB751A40F5BC066359E4C00068721787 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7556966881E82AA8A9CFA621017A86A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */; };
+		BB2A8CB1C1E8A95904D20134E3154191 /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623F8AE9AB8B6E2914A330730FBEF150 /* EasyPeasy.framework */; };
+		BBDD5A2F124A7538D60BFC9B9B91C0EB /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480C84A3C99FB88F14335BB5A067A42 /* DimensionAttribute+AppKit.swift */; };
+		BC5AB76802C3AF039CFB6102E2E89AD7 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE8B61A93DE06D0C28D56D45E16A30 /* Item+UIKit.swift */; };
+		BEBFC004C37D2A39D2695A8B70A71787 /* TabbarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5941F8335CACDB2C895A67277A80A /* TabbarMenu.swift */; };
+		C3F1CF25A547A3761DD89DB494CECF60 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A34F82B36DE560A8406B65BF6D99C /* NSLayoutGuide+Easy.swift */; };
+		C7604258E5E7FD6C1659545514F34E85 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = DD05720258997143EC5AADDD36F7CE0F /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7F6464B5B561E007DA5C58A9997EAD3 /* Pods-GooeyTabbarSampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8164C671CB376BE39F7AFACE726BB593 /* Pods-GooeyTabbarSampleUITests-dummy.m */; };
+		C860DF1DA2767DC93B882EED79A30518 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B573659E5B4AC4A7997B196D4A7D209 /* UIColor_Hex_Swift-dummy.m */; };
+		C95C8312DBA615BA67B27518E9F5A0A5 /* PayWandBasicElements-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D650939EC7C772DCF280939128E671 /* PayWandBasicElements-dummy.m */; };
+		CCF8C5BDA51404F535B734C8FD7A5B0D /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423AEBBBD232868ACD36843C7AE957F /* PositionAttribute+UIKit.swift */; };
+		D26ECF6D846C3291E945D1FD1165D4DD /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529F48124D42CDBDD7DC068ACE8D7BD /* Context.swift */; };
+		D3BA3D1B8D62D17B6F721B8D550570D9 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACEA37560A9777525939F0DDBB15AA7 /* PureLayout.framework */; };
+		D83409947752D7FCDAAE8B5F7734875D /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 467951529B77A97B65EE60BA4ACF4345 /* PureLayout-dummy.m */; };
+		D936D976868C563E545AF45E2FC6B69F /* Pods-GooeyTabbarSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B150E8EDAE0385CFE9E2ACC45A38EC /* Pods-GooeyTabbarSample-dummy.m */; };
+		DDA435B3FE27F50C8F7D2FB5899B324E /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CBFD899F5B265D781CFD7ED40C84F5 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E02861D212636F4FE44250C89EB0F20A /* TtroButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A4721A80932ABE940561314F4780E /* TtroButton.swift */; };
+		E7CDD6C93BD678A8A3CF8919F6254764 /* Pods-GooeyTabbarSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6C7BD20DC01893A4526714A72182CF /* Pods-GooeyTabbarSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8988848228638F22718E81F898BF7AE /* TtroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B771F51C03A4B0B904F43559B1A79 /* TtroTextField.swift */; };
+		EDB236F3139700DAA77B89630C40382F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */; };
+		EE3F7936D0001C21F6125A3A0D1F33FF /* TtroDigitEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E051C410B52F395F2DC4760D262B90B /* TtroDigitEntry.swift */; };
+		F12440C59BCC14AB45EEE2651323876C /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F65D44E396A19FD3E7284FE55AE5B6 /* UIColor_Hex_Swift.framework */; };
+		F39915BF9B78F9A7F550FC6775A4BD4A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FD05C2618272817579DE214A194A6D49 /* NSLayoutConstraint+PureLayout.m */; };
+		F6774EBA3545CE3916C9260D0EB925FD /* Pods-GooeyTabbarSampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84221284AF792F2DBA4FC0F9F9D007F5 /* Pods-GooeyTabbarSampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB45CA1317275242EAE843BAB59D0F68 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3D8CC23C3AC5779470CCFCC25BF7ED /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE600361B8F8D819D07EE55AD1BA9BCF /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA811D27DA03F4841B168A1A43DB290 /* NSView+Easy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12209939F82AFC6E53A18F9850C4D1CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		303DE81E0635D5D1859AEF51E8BA5213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		6DB56459003149A9824165BBDD354CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		78E0260932D9507268D0E23A5875B990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DAEEB1932B65A1B49F4B4E7B0C0048;
+			remoteInfo = PayWandBasicElements;
+		};
+		7948CA1E56E1A3791D2652FC80C7D44F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4253F87176115CA05D9012798046971;
+			remoteInfo = PureLayout;
+		};
+		79D05CA56F3371BF2DA41F0E991FC7B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4253F87176115CA05D9012798046971;
+			remoteInfo = PureLayout;
+		};
+		8F37468D736D124ACC8CB10737DC5D9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		94406B4AC10D2E14106AA71367FCE015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		AEB0F73ABA81A0152D6CE398D03360D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0978AC3B3860060647551DBE98E78C9;
+			remoteInfo = TtroGooeyTabbar;
+		};
+		B77CD24D9F36C9D57048071C392172F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		C7906B8AD5A90A941DF42BD072DD3BF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		CA65754205DBBC7E984C8764F576B124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DAEEB1932B65A1B49F4B4E7B0C0048;
+			remoteInfo = PayWandBasicElements;
+		};
+		CAF4B9ECC83A1E676977163C06357235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		EBD836AD22AF9133E8484157316A2DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0423AEBBBD232868ACD36843C7AE957F /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		0529F48124D42CDBDD7DC068ACE8D7BD /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
+		05CBFD899F5B265D781CFD7ED40C84F5 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		12D7C899E13EAC3D2AA0FF5D59F2F80B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15177EFDC72809A153511C0ED7C7391B /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
+		1C59926DCEF77984C0936B7EF4C7E86A /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		1DC6A03EB60DE382EF75996C2D932212 /* GooeyTabbarMenuItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GooeyTabbarMenuItem.swift; sourceTree = "<group>"; };
+		1DF8ED924A9E56C1E60671F9CF3272BF /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		1F421CA63339E345AD23232ED09A8635 /* Pods-GooeyTabbarSampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GooeyTabbarSampleTests-resources.sh"; sourceTree = "<group>"; };
+		207270AAF9A8C89339E27F7140718BAE /* APCustomBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APCustomBlurView.swift; sourceTree = "<group>"; };
+		24907F57042E53F9BDAB6437FFECEDEF /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		26715E4823430C20A5D2C3B5D71294B1 /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
+		2781152E1ACFC46B481A2F99FCCE0A50 /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
+		2CA63E48018BF4194BE50FC3687E5D63 /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
+		2E6A4721A80932ABE940561314F4780E /* TtroButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroButton.swift; sourceTree = "<group>"; };
+		317EE26766F887BB55EE1D28F345815B /* PayWandBasicElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PayWandBasicElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E1F8CAB187828CEB42E110B2DB0B98 /* SwiftyCustomContentButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCustomContentButton.swift; path = SwiftyButton/SwiftyCustomContentButton.swift; sourceTree = "<group>"; };
+		342F0ED1B0F478B101F42188EB7C25AF /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		34D650939EC7C772DCF280939128E671 /* PayWandBasicElements-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PayWandBasicElements-dummy.m"; sourceTree = "<group>"; };
+		36B6572489F341DB53F24435BC220916 /* TtroGooeyTabbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TtroGooeyTabbar.modulemap; sourceTree = "<group>"; };
+		36CC9D6CD2CE40B4206BBBF241367594 /* AnimatedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
+		3A6C7BD20DC01893A4526714A72182CF /* Pods-GooeyTabbarSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GooeyTabbarSample-umbrella.h"; sourceTree = "<group>"; };
+		3D04B24893CA482755C00E4B6C4EE47F /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
+		3E051C410B52F395F2DC4760D262B90B /* TtroDigitEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroDigitEntry.swift; sourceTree = "<group>"; };
+		3F51BF9A052E540C36D235DC91DEB53B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F6B65E45DC78047BE05D003ADA286E9 /* Pods-GooeyTabbarSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GooeyTabbarSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		41033ECC1B2BB90F91506E349C986654 /* TtroGooeyTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TtroGooeyTabbar.framework; path = TtroGooeyTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		467951529B77A97B65EE60BA4ACF4345 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		4995064CCF097040528D9C6F6F6443BE /* Pods-GooeyTabbarSampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GooeyTabbarSampleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		49B8F12A10CC00258D4F43268AD0CC2B /* Pods-GooeyTabbarSampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GooeyTabbarSampleTests.modulemap"; sourceTree = "<group>"; };
+		4A0344E2AC9A91ECB47535FE07773AAF /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		4B179E7B67438055435C28AA1F806EFB /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
+		4E978873855136B75535D8A5439F8F12 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
+		5110BD7FD646C3F8BEE8D5CC680CF858 /* PayWandBasicElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PayWandBasicElements.framework; path = PayWandBasicElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E2FAE4F2B5F3B017C47B990DA18AC0 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_Hex_Swift.framework; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5911B96EF58414B5FDA36D8D71023407 /* Pods_GooeyTabbarSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GooeyTabbarSampleTests.framework; path = "Pods-GooeyTabbarSampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C55A4DA871B7E082D159FF2656430D8 /* PayWandBasicElements-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PayWandBasicElements-prefix.pch"; sourceTree = "<group>"; };
+		5F9E73B54E8E410D1B9C0047659DD812 /* Pods-GooeyTabbarSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooeyTabbarSample.release.xcconfig"; sourceTree = "<group>"; };
+		5FD48D6CE3F5F90CA57A87AE38F246E3 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
+		623F8AE9AB8B6E2914A330730FBEF150 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6480C84A3C99FB88F14335BB5A067A42 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		64F65D44E396A19FD3E7284FE55AE5B6 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		678DBC5D9B77311B5D772684CD0C26F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697DFB96349CD9956989461AE1FFAA33 /* Pods-GooeyTabbarSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooeyTabbarSample.debug.xcconfig"; sourceTree = "<group>"; };
+		6BB27BC7ED6C53FB340E5077D348D211 /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
+		6BBB6A9D469F7B33520B83096818EBDB /* PayWandBasicElements.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PayWandBasicElements.modulemap; sourceTree = "<group>"; };
+		6BFF802CE58F570F2C0C79A1D14B17DB /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
+		6D6B3E315EE6EDB2122D235577001284 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D7F79DCAB776A889FACEE36B84742ED /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6FC98C9B59DAC5F133333539ED3A575E /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		70C64C6546B2798F2F6262B24CCAD451 /* Pods-GooeyTabbarSampleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GooeyTabbarSampleUITests-resources.sh"; sourceTree = "<group>"; };
+		73C26394A4F45EB2BCF2EA4016DEF2EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		78255E6745FCFE4D6EC9CDDF16B3425B /* TtroGooeyTabbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TtroGooeyTabbar-dummy.m"; sourceTree = "<group>"; };
+		7A9B9CD36C3FDB6263A5719197040554 /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		7B2A1D8A0A9ECF22C303719D7483BBB2 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D199E8630B497C3A6F85870C62D1E91 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		7D917BAE9F318513C537CCE2A86D7B37 /* Pods-GooeyTabbarSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooeyTabbarSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F0B04B2F7688E9BF8C0AD9A8A3BF45D /* Pods-GooeyTabbarSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooeyTabbarSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F437E71829013C9380B2314490C1E69 /* TtroGooeyTabbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroGooeyTabbar-prefix.pch"; sourceTree = "<group>"; };
+		7FEA300A351C70F17D83ED9E1A204C09 /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
+		807D8B0E6F29C19627A5E83B22601D08 /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
+		8164C671CB376BE39F7AFACE726BB593 /* Pods-GooeyTabbarSampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GooeyTabbarSampleUITests-dummy.m"; sourceTree = "<group>"; };
+		823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		834A9AB3C56125A54104528B895AF50F /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		84221284AF792F2DBA4FC0F9F9D007F5 /* Pods-GooeyTabbarSampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GooeyTabbarSampleUITests-umbrella.h"; sourceTree = "<group>"; };
+		846E1FE6FCF507659BE24F18DFCAD5C2 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		88AF0A4E7E2489542FE28B7181FC6018 /* Pods-GooeyTabbarSampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GooeyTabbarSampleUITests.modulemap"; sourceTree = "<group>"; };
+		8AA061CA62CD97C3890907FB78CE340E /* Pods-GooeyTabbarSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooeyTabbarSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B573659E5B4AC4A7997B196D4A7D209 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		8E3D8CC23C3AC5779470CCFCC25BF7ED /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		8E5D4651A6F42DB921211F7D58E7CE29 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9264B175C07896FDD094CD80FCDEF566 /* Pods-GooeyTabbarSampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GooeyTabbarSampleTests-frameworks.sh"; sourceTree = "<group>"; };
+		936ADD0C2772420117E00F9E979DF6EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A9B82A4666AC0783C10B5482F550525 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		9E02C45ECD22CA06C6903F46B2991914 /* TtroGooeyTabbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TtroGooeyTabbar.xcconfig; sourceTree = "<group>"; };
+		9EF7A3CF0210071D60F1F1F10500E0C6 /* Pods_GooeyTabbarSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GooeyTabbarSampleUITests.framework; path = "Pods-GooeyTabbarSampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23B771F51C03A4B0B904F43559B1A79 /* TtroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroTextField.swift; sourceTree = "<group>"; };
+		A32550BD0878EF3F54D0DBCA76B5A6D7 /* Pods-GooeyTabbarSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GooeyTabbarSample-frameworks.sh"; sourceTree = "<group>"; };
+		A686346CE2E9EC65BA60FB32D4E57F9B /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
+		AB2AF3219A55DFF79A833A6CD71A6705 /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		AB751A40F5BC066359E4C00068721787 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		ABA811D27DA03F4841B168A1A43DB290 /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
+		ADDABA2A34811EBE4EDA0E59A799BF9E /* TtroLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroLabel.swift; sourceTree = "<group>"; };
+		AEA92B83CD3D32B0FD5DF2A7CE3143CF /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		AEBF92BC71693E6E968F5D20E6139470 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B11E6B31A3C3C00BF6D2F3AE2B21FCFB /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		B1CBBF5C4247ACDE9D511A67E0C23146 /* Pods-GooeyTabbarSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GooeyTabbarSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B27805D7ADD10C828617AA6A3946E1E0 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyPeasy.framework; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA50AD980151151B5CEEB98E6CA0B372 /* Pods-GooeyTabbarSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GooeyTabbarSample.modulemap"; sourceTree = "<group>"; };
+		C10A34F82B36DE560A8406B65BF6D99C /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		C2EE8B61A93DE06D0C28D56D45E16A30 /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
+		C458EA914DC5B020070B7061D1851C34 /* Pods-GooeyTabbarSampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GooeyTabbarSampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C682807EA03FF8EA314161637B8B60E5 /* Pods-GooeyTabbarSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GooeyTabbarSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C87F2729EF0F4119520142499987156E /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		C96D33E5ABE6C02B086F2E95B5B25720 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		CA8CE1B502B7AE94D67D33F64750272B /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		CBC0A5099DF83522CC488AA867496DDA /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		CE663E4B5C2A5D515F27E78F56619B3C /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
+		D033D46D365AF8425810ECF0E13B289A /* Pods-GooeyTabbarSampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GooeyTabbarSampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1B150E8EDAE0385CFE9E2ACC45A38EC /* Pods-GooeyTabbarSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GooeyTabbarSample-dummy.m"; sourceTree = "<group>"; };
+		D91104ECD21A7A3061C7C9DDC6D610B4 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
+		D95E180E84AD4A5F43B883BAE3243455 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyButton.framework; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACEA37560A9777525939F0DDBB15AA7 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD5941F8335CACDB2C895A67277A80A /* TabbarMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarMenu.swift; sourceTree = "<group>"; };
+		DD05720258997143EC5AADDD36F7CE0F /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		E24FBA995E05932899E149C8F0B07871 /* PayWandBasicElements.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PayWandBasicElements.xcconfig; sourceTree = "<group>"; };
+		EA28E898EB0E40109F0893C7134751EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF4E239BE4AA8145D6CE81A651D09EC /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC98B009F0A4C165FB60AEC676DEE262 /* Pods-GooeyTabbarSampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GooeyTabbarSampleTests-umbrella.h"; sourceTree = "<group>"; };
+		ED7133490AC5C88539651D1E8DBF7D0C /* Pods-GooeyTabbarSampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GooeyTabbarSampleTests-dummy.m"; sourceTree = "<group>"; };
+		EFC9DA5C34BE0A5FB9DBC527DE814170 /* PayWandBasicElements-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PayWandBasicElements-umbrella.h"; sourceTree = "<group>"; };
+		F03EC910C4A924E9D0B80BABBD497B81 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		F0F433B942F101DAE1224CD15CB09781 /* Pods_GooeyTabbarSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GooeyTabbarSample.framework; path = "Pods-GooeyTabbarSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B886E9A476B44F2BAAEE0F059449F1 /* Pods-GooeyTabbarSampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GooeyTabbarSampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F21767FB434F8961446DB436DF6E72D2 /* Pods-GooeyTabbarSampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GooeyTabbarSampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2556DFDDEE935120FC39A07BB4DF3EA /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
+		F6FA41D03780DDAD8839C71B89F93075 /* Pods-GooeyTabbarSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GooeyTabbarSample-resources.sh"; sourceTree = "<group>"; };
+		F95679AB7C6F16FADC442117A47B83EB /* TtroGooeyTabbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroGooeyTabbar-umbrella.h"; sourceTree = "<group>"; };
+		F991D62C0A9AC9BB8E05DD809A8F7775 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
+		FCE82743A329FC0E4CD0AD38ABE5DFF5 /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
+		FD05C2618272817579DE214A194A6D49 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		FD98FFF43FD4ADAC8415C39FE38D8877 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		FE53F1FEF9693100187044FC3C11379B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE710006D2CD214E2AB5DCEFEB4107AC /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
+		FFA1E23324DF9B3EF08555A06DF0EF77 /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22E64FA70E9DF60DB7FCCA890CCF0879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637AECF468E9AFA67663A6FE12D670B7 /* Foundation.framework in Frameworks */,
+				35550F0F2D3072F048821AA8567F7C14 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D939A1EB1BEFBABFB75E708B18E7236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC98CD86D69D7E824DC8A52602CE731 /* Foundation.framework in Frameworks */,
+				D3BA3D1B8D62D17B6F721B8D550570D9 /* PureLayout.framework in Frameworks */,
+				1852FB3D090CE6BC4E82D5E6C4B30592 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707AC0B1B4461CE6629737959E76E959 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2A8CB1C1E8A95904D20134E3154191 /* EasyPeasy.framework in Frameworks */,
+				B7556966881E82AA8A9CFA621017A86A /* Foundation.framework in Frameworks */,
+				2422F1C5ED696FBFE3C9CCC92F23A8E3 /* SwiftyButton.framework in Frameworks */,
+				F12440C59BCC14AB45EEE2651323876C /* UIColor_Hex_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77CB7516AF5893A6C1E53A65076D41BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1817EE1F1830A17F90E40F26068728C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE37DCDC3F6561A626D70068181F961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCEBFA18F780D4BA8DB378EAF7076A2 /* EasyPeasy.framework in Frameworks */,
+				6E34BDBD6E1A790FB1DF9F6F1E933D6A /* Foundation.framework in Frameworks */,
+				8103529CB0B7DAB64A453C34B4263BD7 /* PayWandBasicElements.framework in Frameworks */,
+				A2E5A6728F7ECF13B73FA7253FB4EA47 /* SwiftyButton.framework in Frameworks */,
+				ADB5F85D3938325A09BDD263660F8C82 /* UIColor_Hex_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		988FD6C0DD546C6385D6558B885773F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0768890904945343C17C77E9D5AE4D3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CF2A830DAC187B154E2F2662ECC54E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2CB06048F97B921EDA46856CE8B8CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EEEE83FF68090FE613948B95942A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB236F3139700DAA77B89630C40382F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED23D3BCB04B931065BE89EF7B9F96B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9567E721A36CB9E3120FA792D02F6912 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C5CDE11BE2BC2D91B0BC31BD1B65D10 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D7C899E13EAC3D2AA0FF5D59F2F80B /* Info.plist */,
+				6BBB6A9D469F7B33520B83096818EBDB /* PayWandBasicElements.modulemap */,
+				E24FBA995E05932899E149C8F0B07871 /* PayWandBasicElements.xcconfig */,
+				34D650939EC7C772DCF280939128E671 /* PayWandBasicElements-dummy.m */,
+				5C55A4DA871B7E082D159FF2656430D8 /* PayWandBasicElements-prefix.pch */,
+				EFC9DA5C34BE0A5FB9DBC527DE814170 /* PayWandBasicElements-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../TtroGooeyTabbar/GooeyTabbarSample/Pods/Target Support Files/PayWandBasicElements";
+			sourceTree = "<group>";
+		};
+		0D604948D182F54ABECFF944219DD2DC /* TtroGooeyTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF040AAE325415C09AB9FDF301176B /* Support Files */,
+				34FA7C510F7D37FB48B43632AA8E851B /* TtroGooeyTabbar */,
+			);
+			name = TtroGooeyTabbar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		282EDF4019A05F0C914F52F29B8A5391 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B27805D7ADD10C828617AA6A3946E1E0 /* EasyPeasy.framework */,
+				5110BD7FD646C3F8BEE8D5CC680CF858 /* PayWandBasicElements.framework */,
+				F0F433B942F101DAE1224CD15CB09781 /* Pods_GooeyTabbarSample.framework */,
+				5911B96EF58414B5FDA36D8D71023407 /* Pods_GooeyTabbarSampleTests.framework */,
+				9EF7A3CF0210071D60F1F1F10500E0C6 /* Pods_GooeyTabbarSampleUITests.framework */,
+				EAF4E239BE4AA8145D6CE81A651D09EC /* PureLayout.framework */,
+				D95E180E84AD4A5F43B883BAE3243455 /* SwiftyButton.framework */,
+				41033ECC1B2BB90F91506E349C986654 /* TtroGooeyTabbar.framework */,
+				58E2FAE4F2B5F3B017C47B990DA18AC0 /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34FA7C510F7D37FB48B43632AA8E851B /* TtroGooeyTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				36CC9D6CD2CE40B4206BBBF241367594 /* AnimatedButton.swift */,
+				1DC6A03EB60DE382EF75996C2D932212 /* GooeyTabbarMenuItem.swift */,
+				DCD5941F8335CACDB2C895A67277A80A /* TabbarMenu.swift */,
+			);
+			name = TtroGooeyTabbar;
+			path = TtroGooeyTabbar;
+			sourceTree = "<group>";
+		};
+		6164D154385FDCF929F4D6370CEEBBB1 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AB751A40F5BC066359E4C00068721787 /* ALView+PureLayout.h */,
+				FD98FFF43FD4ADAC8415C39FE38D8877 /* ALView+PureLayout.m */,
+				05CBFD899F5B265D781CFD7ED40C84F5 /* NSArray+PureLayout.h */,
+				F03EC910C4A924E9D0B80BABBD497B81 /* NSArray+PureLayout.m */,
+				24907F57042E53F9BDAB6437FFECEDEF /* NSLayoutConstraint+PureLayout.h */,
+				FD05C2618272817579DE214A194A6D49 /* NSLayoutConstraint+PureLayout.m */,
+				6FC98C9B59DAC5F133333539ED3A575E /* PureLayout.h */,
+				DD05720258997143EC5AADDD36F7CE0F /* PureLayout+Internal.h */,
+				1DF8ED924A9E56C1E60671F9CF3272BF /* PureLayoutDefines.h */,
+				766F8882AD0D0DB979FAF648B7DD49C5 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		6A8E29F258A0ED6FC371E5C81B82F368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD166C5F892A9CFE39C0EC5217EB4ACF /* EasyPeasy */,
+				6164D154385FDCF929F4D6370CEEBBB1 /* PureLayout */,
+				95F88AE6D086DDA82FC3C9B337836BAE /* SwiftyButton */,
+				E3F5A3825CB58E329D0BB59F69D94D57 /* UIColor_Hex_Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70E619A338D9E546BF3B1479D23E6440 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				823B2388E59BEE83AA5EEA387A6FDEFD /* Foundation.framework */,
+				73C26394A4F45EB2BCF2EA4016DEF2EC /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7345E0AD4E557FDA07E643DE7F9CB332 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E5D4651A6F42DB921211F7D58E7CE29 /* Info.plist */,
+				6BB27BC7ED6C53FB340E5077D348D211 /* SwiftyButton.modulemap */,
+				7FEA300A351C70F17D83ED9E1A204C09 /* SwiftyButton.xcconfig */,
+				AB2AF3219A55DFF79A833A6CD71A6705 /* SwiftyButton-dummy.m */,
+				B11E6B31A3C3C00BF6D2F3AE2B21FCFB /* SwiftyButton-prefix.pch */,
+				CA8CE1B502B7AE94D67D33F64750272B /* SwiftyButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyButton";
+			sourceTree = "<group>";
+		};
+		766F8882AD0D0DB979FAF648B7DD49C5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEBF92BC71693E6E968F5D20E6139470 /* Info.plist */,
+				846E1FE6FCF507659BE24F18DFCAD5C2 /* PureLayout.modulemap */,
+				CBC0A5099DF83522CC488AA867496DDA /* PureLayout.xcconfig */,
+				467951529B77A97B65EE60BA4ACF4345 /* PureLayout-dummy.m */,
+				342F0ED1B0F478B101F42188EB7C25AF /* PureLayout-prefix.pch */,
+				AEA92B83CD3D32B0FD5DF2A7CE3143CF /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		7BF002B44842EFDB42E5EEA4E2E57671 /* Pods-GooeyTabbarSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA28E898EB0E40109F0893C7134751EF /* Info.plist */,
+				88AF0A4E7E2489542FE28B7181FC6018 /* Pods-GooeyTabbarSampleUITests.modulemap */,
+				C458EA914DC5B020070B7061D1851C34 /* Pods-GooeyTabbarSampleUITests-acknowledgements.markdown */,
+				F21767FB434F8961446DB436DF6E72D2 /* Pods-GooeyTabbarSampleUITests-acknowledgements.plist */,
+				8164C671CB376BE39F7AFACE726BB593 /* Pods-GooeyTabbarSampleUITests-dummy.m */,
+				4995064CCF097040528D9C6F6F6443BE /* Pods-GooeyTabbarSampleUITests-frameworks.sh */,
+				70C64C6546B2798F2F6262B24CCAD451 /* Pods-GooeyTabbarSampleUITests-resources.sh */,
+				84221284AF792F2DBA4FC0F9F9D007F5 /* Pods-GooeyTabbarSampleUITests-umbrella.h */,
+				7F0B04B2F7688E9BF8C0AD9A8A3BF45D /* Pods-GooeyTabbarSampleUITests.debug.xcconfig */,
+				8AA061CA62CD97C3890907FB78CE340E /* Pods-GooeyTabbarSampleUITests.release.xcconfig */,
+			);
+			name = "Pods-GooeyTabbarSampleUITests";
+			path = "Target Support Files/Pods-GooeyTabbarSampleUITests";
+			sourceTree = "<group>";
+		};
+		7CAAB4B3EBC1BDA6EC811136E40A74A5 /* PayWandBasicElements */ = {
+			isa = PBXGroup;
+			children = (
+				DA6503711A04673929A30BECBF9A6C3D /* PayWandBasicElements */,
+				0C5CDE11BE2BC2D91B0BC31BD1B65D10 /* Support Files */,
+			);
+			name = PayWandBasicElements;
+			path = ../../../PayWandBasicElements;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D4D15023A598C5208721DBCA75D1CFF8 /* Development Pods */,
+				D1C9670D03E3CFFDC009B1095FEA4C62 /* Frameworks */,
+				6A8E29F258A0ED6FC371E5C81B82F368 /* Pods */,
+				282EDF4019A05F0C914F52F29B8A5391 /* Products */,
+				A3C8AFF7722ABB87132A53A1E211246E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		881970111ABBC9FFA9B410A52823445F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B179E7B67438055435C28AA1F806EFB /* EasyPeasy.modulemap */,
+				D91104ECD21A7A3061C7C9DDC6D610B4 /* EasyPeasy.xcconfig */,
+				FFA1E23324DF9B3EF08555A06DF0EF77 /* EasyPeasy-dummy.m */,
+				2781152E1ACFC46B481A2F99FCCE0A50 /* EasyPeasy-prefix.pch */,
+				A686346CE2E9EC65BA60FB32D4E57F9B /* EasyPeasy-umbrella.h */,
+				3F51BF9A052E540C36D235DC91DEB53B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EasyPeasy";
+			sourceTree = "<group>";
+		};
+		951D7B70EBC24DC0215B1B03F4FCA502 /* Pods-GooeyTabbarSample */ = {
+			isa = PBXGroup;
+			children = (
+				FE53F1FEF9693100187044FC3C11379B /* Info.plist */,
+				BA50AD980151151B5CEEB98E6CA0B372 /* Pods-GooeyTabbarSample.modulemap */,
+				B1CBBF5C4247ACDE9D511A67E0C23146 /* Pods-GooeyTabbarSample-acknowledgements.markdown */,
+				3F6B65E45DC78047BE05D003ADA286E9 /* Pods-GooeyTabbarSample-acknowledgements.plist */,
+				D1B150E8EDAE0385CFE9E2ACC45A38EC /* Pods-GooeyTabbarSample-dummy.m */,
+				A32550BD0878EF3F54D0DBCA76B5A6D7 /* Pods-GooeyTabbarSample-frameworks.sh */,
+				F6FA41D03780DDAD8839C71B89F93075 /* Pods-GooeyTabbarSample-resources.sh */,
+				3A6C7BD20DC01893A4526714A72182CF /* Pods-GooeyTabbarSample-umbrella.h */,
+				697DFB96349CD9956989461AE1FFAA33 /* Pods-GooeyTabbarSample.debug.xcconfig */,
+				5F9E73B54E8E410D1B9C0047659DD812 /* Pods-GooeyTabbarSample.release.xcconfig */,
+			);
+			name = "Pods-GooeyTabbarSample";
+			path = "Target Support Files/Pods-GooeyTabbarSample";
+			sourceTree = "<group>";
+		};
+		95F88AE6D086DDA82FC3C9B337836BAE /* SwiftyButton */ = {
+			isa = PBXGroup;
+			children = (
+				3D04B24893CA482755C00E4B6C4EE47F /* SwiftyButton.swift */,
+				2CA63E48018BF4194BE50FC3687E5D63 /* SwiftyButton+ResizableImage.swift */,
+				AD5002E8F51A9C2A9C05370C5C35199A /* CustomContent */,
+				7345E0AD4E557FDA07E643DE7F9CB332 /* Support Files */,
+			);
+			name = SwiftyButton;
+			path = SwiftyButton;
+			sourceTree = "<group>";
+		};
+		A3C8AFF7722ABB87132A53A1E211246E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				951D7B70EBC24DC0215B1B03F4FCA502 /* Pods-GooeyTabbarSample */,
+				E635F7B3D83F2851AAFA2AFE86A108DD /* Pods-GooeyTabbarSampleTests */,
+				7BF002B44842EFDB42E5EEA4E2E57671 /* Pods-GooeyTabbarSampleUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD5002E8F51A9C2A9C05370C5C35199A /* CustomContent */ = {
+			isa = PBXGroup;
+			children = (
+				31E1F8CAB187828CEB42E110B2DB0B98 /* SwiftyCustomContentButton.swift */,
+			);
+			name = CustomContent;
+			sourceTree = "<group>";
+		};
+		CD166C5F892A9CFE39C0EC5217EB4ACF /* EasyPeasy */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B82A4666AC0783C10B5482F550525 /* Attribute.swift */,
+				CE663E4B5C2A5D515F27E78F56619B3C /* CompoundAttribute.swift */,
+				5FD48D6CE3F5F90CA57A87AE38F246E3 /* Constant.swift */,
+				0529F48124D42CDBDD7DC068ACE8D7BD /* Context.swift */,
+				807D8B0E6F29C19627A5E83B22601D08 /* DimensionAttribute.swift */,
+				6480C84A3C99FB88F14335BB5A067A42 /* DimensionAttribute+AppKit.swift */,
+				7A9B9CD36C3FDB6263A5719197040554 /* DimensionAttribute+UIKit.swift */,
+				6BFF802CE58F570F2C0C79A1D14B17DB /* Item.swift */,
+				15177EFDC72809A153511C0ED7C7391B /* Item+AppKit.swift */,
+				C2EE8B61A93DE06D0C28D56D45E16A30 /* Item+UIKit.swift */,
+				F991D62C0A9AC9BB8E05DD809A8F7775 /* Node.swift */,
+				C10A34F82B36DE560A8406B65BF6D99C /* NSLayoutGuide+Easy.swift */,
+				ABA811D27DA03F4841B168A1A43DB290 /* NSView+Easy.swift */,
+				FCE82743A329FC0E4CD0AD38ABE5DFF5 /* PositionAttribute.swift */,
+				834A9AB3C56125A54104528B895AF50F /* PositionAttribute+AppKit.swift */,
+				0423AEBBBD232868ACD36843C7AE957F /* PositionAttribute+UIKit.swift */,
+				4E978873855136B75535D8A5439F8F12 /* Priority.swift */,
+				26715E4823430C20A5D2C3B5D71294B1 /* ReferenceAttribute.swift */,
+				C87F2729EF0F4119520142499987156E /* UILayoutGuide+Easy.swift */,
+				F2556DFDDEE935120FC39A07BB4DF3EA /* UIView+Easy.swift */,
+				881970111ABBC9FFA9B410A52823445F /* Support Files */,
+			);
+			name = EasyPeasy;
+			path = EasyPeasy;
+			sourceTree = "<group>";
+		};
+		D1C9670D03E3CFFDC009B1095FEA4C62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				623F8AE9AB8B6E2914A330730FBEF150 /* EasyPeasy.framework */,
+				317EE26766F887BB55EE1D28F345815B /* PayWandBasicElements.framework */,
+				DACEA37560A9777525939F0DDBB15AA7 /* PureLayout.framework */,
+				7B2A1D8A0A9ECF22C303719D7483BBB2 /* SwiftyButton.framework */,
+				64F65D44E396A19FD3E7284FE55AE5B6 /* UIColor_Hex_Swift.framework */,
+				70E619A338D9E546BF3B1479D23E6440 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4D15023A598C5208721DBCA75D1CFF8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CAAB4B3EBC1BDA6EC811136E40A74A5 /* PayWandBasicElements */,
+				0D604948D182F54ABECFF944219DD2DC /* TtroGooeyTabbar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DA6503711A04673929A30BECBF9A6C3D /* PayWandBasicElements */ = {
+			isa = PBXGroup;
+			children = (
+				207270AAF9A8C89339E27F7140718BAE /* APCustomBlurView.swift */,
+				6D7F79DCAB776A889FACEE36B84742ED /* Extensions.swift */,
+				2E6A4721A80932ABE940561314F4780E /* TtroButton.swift */,
+				3E051C410B52F395F2DC4760D262B90B /* TtroDigitEntry.swift */,
+				ADDABA2A34811EBE4EDA0E59A799BF9E /* TtroLabel.swift */,
+				A23B771F51C03A4B0B904F43559B1A79 /* TtroTextField.swift */,
+			);
+			name = PayWandBasicElements;
+			path = PayWandBasicElements;
+			sourceTree = "<group>";
+		};
+		DC9D17D3EB78FB147A398F0ABB7F6B49 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				678DBC5D9B77311B5D772684CD0C26F7 /* Info.plist */,
+				7D199E8630B497C3A6F85870C62D1E91 /* UIColor_Hex_Swift.modulemap */,
+				C96D33E5ABE6C02B086F2E95B5B25720 /* UIColor_Hex_Swift.xcconfig */,
+				8B573659E5B4AC4A7997B196D4A7D209 /* UIColor_Hex_Swift-dummy.m */,
+				FE710006D2CD214E2AB5DCEFEB4107AC /* UIColor_Hex_Swift-prefix.pch */,
+				8E3D8CC23C3AC5779470CCFCC25BF7ED /* UIColor_Hex_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
+			sourceTree = "<group>";
+		};
+		E3F5A3825CB58E329D0BB59F69D94D57 /* UIColor_Hex_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4A0344E2AC9A91ECB47535FE07773AAF /* HEXColor.h */,
+				1C59926DCEF77984C0936B7EF4C7E86A /* UIColorExtension.swift */,
+				DC9D17D3EB78FB147A398F0ABB7F6B49 /* Support Files */,
+			);
+			name = UIColor_Hex_Swift;
+			path = UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
+		E635F7B3D83F2851AAFA2AFE86A108DD /* Pods-GooeyTabbarSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				936ADD0C2772420117E00F9E979DF6EA /* Info.plist */,
+				49B8F12A10CC00258D4F43268AD0CC2B /* Pods-GooeyTabbarSampleTests.modulemap */,
+				D033D46D365AF8425810ECF0E13B289A /* Pods-GooeyTabbarSampleTests-acknowledgements.markdown */,
+				F1B886E9A476B44F2BAAEE0F059449F1 /* Pods-GooeyTabbarSampleTests-acknowledgements.plist */,
+				ED7133490AC5C88539651D1E8DBF7D0C /* Pods-GooeyTabbarSampleTests-dummy.m */,
+				9264B175C07896FDD094CD80FCDEF566 /* Pods-GooeyTabbarSampleTests-frameworks.sh */,
+				1F421CA63339E345AD23232ED09A8635 /* Pods-GooeyTabbarSampleTests-resources.sh */,
+				EC98B009F0A4C165FB60AEC676DEE262 /* Pods-GooeyTabbarSampleTests-umbrella.h */,
+				C682807EA03FF8EA314161637B8B60E5 /* Pods-GooeyTabbarSampleTests.debug.xcconfig */,
+				7D917BAE9F318513C537CCE2A86D7B37 /* Pods-GooeyTabbarSampleTests.release.xcconfig */,
+			);
+			name = "Pods-GooeyTabbarSampleTests";
+			path = "Target Support Files/Pods-GooeyTabbarSampleTests";
+			sourceTree = "<group>";
+		};
+		F1FF040AAE325415C09AB9FDF301176B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D6B3E315EE6EDB2122D235577001284 /* Info.plist */,
+				36B6572489F341DB53F24435BC220916 /* TtroGooeyTabbar.modulemap */,
+				9E02C45ECD22CA06C6903F46B2991914 /* TtroGooeyTabbar.xcconfig */,
+				78255E6745FCFE4D6EC9CDDF16B3425B /* TtroGooeyTabbar-dummy.m */,
+				7F437E71829013C9380B2314490C1E69 /* TtroGooeyTabbar-prefix.pch */,
+				F95679AB7C6F16FADC442117A47B83EB /* TtroGooeyTabbar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "GooeyTabbarSample/Pods/Target Support Files/TtroGooeyTabbar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0BE1B5EDE8487171034827BA4CB48963 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CC295E4383A5F0A07EA42CAE243276 /* PayWandBasicElements-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EA9E9AE5BBCDE4EB1F4BB86D9717E2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F56CCEAD85BF57AF7D00B2B34F1729 /* HEXColor.h in Headers */,
+				FB45CA1317275242EAE843BAB59D0F68 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A13B8CAA6F3E8D6212E995BAE806500 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64CCA69A19DF0C1ADFC5770FA0373290 /* TtroGooeyTabbar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C7D833094B30D0DFDB7B66C2F350FE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6774EBA3545CE3916C9260D0EB925FD /* Pods-GooeyTabbarSampleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B1CE58BB98AD87576B08330D0B267B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CDD6C93BD678A8A3CF8919F6254764 /* Pods-GooeyTabbarSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A997E6E8C8D90774BDD7E72EB07D7E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A5CF7C9046F0D677E1D6DFF66EF549 /* EasyPeasy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7388E8E7113394B81E7D98615C0DFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F6E4C54884F1E28AF85795ACB1FB64 /* SwiftyButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB861304A039E9D83854859B951AEBE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B37F76060CCD8CB05A9958CBB9C143 /* ALView+PureLayout.h in Headers */,
+				DDA435B3FE27F50C8F7D2FB5899B324E /* NSArray+PureLayout.h in Headers */,
+				883A058B9815B3CFD89DDFDB1CAA0DA2 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				C7604258E5E7FD6C1659545514F34E85 /* PureLayout+Internal.h in Headers */,
+				61A5DBA8B391FC6F8FCB55A6DF698272 /* PureLayout-umbrella.h in Headers */,
+				8CB4FD30B0E4C10C3449F7F0263D1537 /* PureLayout.h in Headers */,
+				528852BBA10BDD4CF993006141B60763 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF60F8DF90A3C30B4801A22256C19022 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A467CC96846ACE51BD11C802B5D30634 /* Pods-GooeyTabbarSampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0010BDB5A9EE9086CA2AB7377D5C9BBF /* Build configuration list for PBXNativeTarget "SwiftyButton" */;
+			buildPhases = (
+				96DDFC36ED330E997929F26B0AC71305 /* Sources */,
+				5D939A1EB1BEFBABFB75E708B18E7236 /* Frameworks */,
+				AC7388E8E7113394B81E7D98615C0DFC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A8343AB2BE21B223E4B320FA8444F9 /* PBXTargetDependency */,
+			);
+			name = SwiftyButton;
+			productName = SwiftyButton;
+			productReference = D95E180E84AD4A5F43B883BAE3243455 /* SwiftyButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46CA9A79A6FF763155DCE986EAA5C053 /* Pods-GooeyTabbarSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14825E7445490F537794F1313217B919 /* Build configuration list for PBXNativeTarget "Pods-GooeyTabbarSample" */;
+			buildPhases = (
+				02381EA3E8AD47961F767A0681F9E90B /* Sources */,
+				DED23D3BCB04B931065BE89EF7B9F96B /* Frameworks */,
+				52B1CE58BB98AD87576B08330D0B267B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD48DC9C13350DE5DE6D4EEDDA882555 /* PBXTargetDependency */,
+				9AEEF7F2E7F31109E91EE300F685DFAB /* PBXTargetDependency */,
+				403A8C6875CA145387FCB80E0854E33D /* PBXTargetDependency */,
+				991ADFC065242BF2DEB644CF7135D932 /* PBXTargetDependency */,
+				C06AC04E334C5BAA4E02CDE3E0564209 /* PBXTargetDependency */,
+				B504E2D4034B9A6D1E8C2E7346CF2B6E /* PBXTargetDependency */,
+			);
+			name = "Pods-GooeyTabbarSample";
+			productName = "Pods-GooeyTabbarSample";
+			productReference = F0F433B942F101DAE1224CD15CB09781 /* Pods_GooeyTabbarSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D866DA0B0F9751548F96DDEB8965D20 /* Build configuration list for PBXNativeTarget "PayWandBasicElements" */;
+			buildPhases = (
+				624A0C866B232AD1F51BA064EEE38AD8 /* Sources */,
+				707AC0B1B4461CE6629737959E76E959 /* Frameworks */,
+				0BE1B5EDE8487171034827BA4CB48963 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79AD0339D04477A5D1935F0BDBACE967 /* PBXTargetDependency */,
+				1F820B878316AFE4D911138077A85C87 /* PBXTargetDependency */,
+				A042BEA8DC5021C5995EB5DF49109C70 /* PBXTargetDependency */,
+			);
+			name = PayWandBasicElements;
+			productName = PayWandBasicElements;
+			productReference = 5110BD7FD646C3F8BEE8D5CC680CF858 /* PayWandBasicElements.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5E209CC24F5AD89AB9E769E0EF11BE /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildPhases = (
+				BFB883DB86401115C4F30712B7666575 /* Sources */,
+				22E64FA70E9DF60DB7FCCA890CCF0879 /* Frameworks */,
+				0EA9E9AE5BBCDE4EB1F4BB86D9717E2B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIColor_Hex_Swift;
+			productName = UIColor_Hex_Swift;
+			productReference = 58E2FAE4F2B5F3B017C47B990DA18AC0 /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E9E3F6B43B50605BFBD15467B4F79F8 /* Pods-GooeyTabbarSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCCBAB2128D8412BECD5316A0D5FA094 /* Build configuration list for PBXNativeTarget "Pods-GooeyTabbarSampleTests" */;
+			buildPhases = (
+				C038804225DC04BA9B1D1394B54588B1 /* Sources */,
+				77CB7516AF5893A6C1E53A65076D41BF /* Frameworks */,
+				FF60F8DF90A3C30B4801A22256C19022 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GooeyTabbarSampleTests";
+			productName = "Pods-GooeyTabbarSampleTests";
+			productReference = 5911B96EF58414B5FDA36D8D71023407 /* Pods_GooeyTabbarSampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0978AC3B3860060647551DBE98E78C9 /* TtroGooeyTabbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58BCB9C323D5F93B6BA0A20E49D66656 /* Build configuration list for PBXNativeTarget "TtroGooeyTabbar" */;
+			buildPhases = (
+				064C0893BA7D3617BEB62DEE2FAD9563 /* Sources */,
+				8EE37DCDC3F6561A626D70068181F961 /* Frameworks */,
+				2A13B8CAA6F3E8D6212E995BAE806500 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A7CE8AA0D5D6E0DA2587DCBA3336044 /* PBXTargetDependency */,
+				7A661B7C2394039F65A4EF1AEA174BCA /* PBXTargetDependency */,
+				AF8E7EDB0DBABE748EA56AA815113858 /* PBXTargetDependency */,
+				8AD708AF4DFD6C6A3709F5AB1F6901F2 /* PBXTargetDependency */,
+			);
+			name = TtroGooeyTabbar;
+			productName = TtroGooeyTabbar;
+			productReference = 41033ECC1B2BB90F91506E349C986654 /* TtroGooeyTabbar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09077C94E191775E258073FA5A3C405C /* Build configuration list for PBXNativeTarget "EasyPeasy" */;
+			buildPhases = (
+				BEE1CD701E167910F30CCB5D80ED2743 /* Sources */,
+				DC24EEEE83FF68090FE613948B95942A /* Frameworks */,
+				6A997E6E8C8D90774BDD7E72EB07D7E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyPeasy;
+			productName = EasyPeasy;
+			productReference = B27805D7ADD10C828617AA6A3946E1E0 /* EasyPeasy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D373FF34E39F3A25DDEBD6B58519FE08 /* Pods-GooeyTabbarSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC1264DAC2A1E26130EB05F040CCB9C3 /* Build configuration list for PBXNativeTarget "Pods-GooeyTabbarSampleUITests" */;
+			buildPhases = (
+				7276DA10460CDE4E85EF820DEC44593B /* Sources */,
+				99CF2A830DAC187B154E2F2662ECC54E /* Frameworks */,
+				2C7D833094B30D0DFDB7B66C2F350FE7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GooeyTabbarSampleUITests";
+			productName = "Pods-GooeyTabbarSampleUITests";
+			productReference = 9EF7A3CF0210071D60F1F1F10500E0C6 /* Pods_GooeyTabbarSampleUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4253F87176115CA05D9012798046971 /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E944E25CB18BDFFA85241F0E5A26793E /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				1D0EAA61C79F44C87927B181AE2EB344 /* Sources */,
+				988FD6C0DD546C6385D6558B885773F6 /* Frameworks */,
+				FB861304A039E9D83854859B951AEBE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = EAF4E239BE4AA8145D6CE81A651D09EC /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 282EDF4019A05F0C914F52F29B8A5391 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */,
+				60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */,
+				46CA9A79A6FF763155DCE986EAA5C053 /* Pods-GooeyTabbarSample */,
+				9E9E3F6B43B50605BFBD15467B4F79F8 /* Pods-GooeyTabbarSampleTests */,
+				D373FF34E39F3A25DDEBD6B58519FE08 /* Pods-GooeyTabbarSampleUITests */,
+				D4253F87176115CA05D9012798046971 /* PureLayout */,
+				1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */,
+				A0978AC3B3860060647551DBE98E78C9 /* TtroGooeyTabbar */,
+				76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02381EA3E8AD47961F767A0681F9E90B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D936D976868C563E545AF45E2FC6B69F /* Pods-GooeyTabbarSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		064C0893BA7D3617BEB62DEE2FAD9563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF19F43F440688B7AEFF1DCC11AA07E /* AnimatedButton.swift in Sources */,
+				9959B5B2C4E9177E02C229C00C7EFE61 /* GooeyTabbarMenuItem.swift in Sources */,
+				BEBFC004C37D2A39D2695A8B70A71787 /* TabbarMenu.swift in Sources */,
+				A2290100C6F4E775A45B43418B5B0502 /* TtroGooeyTabbar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0EAA61C79F44C87927B181AE2EB344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648EFEC4186BA6BA3818656A4969416A /* ALView+PureLayout.m in Sources */,
+				0DD46A9876D07B79D473C6D3FC4946D2 /* NSArray+PureLayout.m in Sources */,
+				F39915BF9B78F9A7F550FC6775A4BD4A /* NSLayoutConstraint+PureLayout.m in Sources */,
+				D83409947752D7FCDAAE8B5F7734875D /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624A0C866B232AD1F51BA064EEE38AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030D441EF7561E9AEEF329E3C0434D2B /* APCustomBlurView.swift in Sources */,
+				1EFA38A9B401515DEA501D1CDC0A8EB9 /* Extensions.swift in Sources */,
+				C95C8312DBA615BA67B27518E9F5A0A5 /* PayWandBasicElements-dummy.m in Sources */,
+				E02861D212636F4FE44250C89EB0F20A /* TtroButton.swift in Sources */,
+				EE3F7936D0001C21F6125A3A0D1F33FF /* TtroDigitEntry.swift in Sources */,
+				5AC48C172934C77A2C2F6B8E9186CDB2 /* TtroLabel.swift in Sources */,
+				E8988848228638F22718E81F898BF7AE /* TtroTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7276DA10460CDE4E85EF820DEC44593B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F6464B5B561E007DA5C58A9997EAD3 /* Pods-GooeyTabbarSampleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DDFC36ED330E997929F26B0AC71305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61A54646708C458650EC61D0B0D6512 /* SwiftyButton+ResizableImage.swift in Sources */,
+				55B877E31E2CC41C2E0DC6F73D0451B3 /* SwiftyButton-dummy.m in Sources */,
+				6AFB4E22A96B1FD008C5720D8E6EAEED /* SwiftyButton.swift in Sources */,
+				8E9360C02A77DCA0D1F9D8415CF059AF /* SwiftyCustomContentButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE1CD701E167910F30CCB5D80ED2743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3474E4E655382B527D799C55021A3567 /* Attribute.swift in Sources */,
+				31F60DBB6662B43BB7182A94B1063E40 /* CompoundAttribute.swift in Sources */,
+				44B2644538FBA736963EE6D7FC685A1A /* Constant.swift in Sources */,
+				D26ECF6D846C3291E945D1FD1165D4DD /* Context.swift in Sources */,
+				BBDD5A2F124A7538D60BFC9B9B91C0EB /* DimensionAttribute+AppKit.swift in Sources */,
+				584B53C655CCC4AF7C7F44A174D34F40 /* DimensionAttribute+UIKit.swift in Sources */,
+				0E4D484CDC66423F39D398ED28B9A37F /* DimensionAttribute.swift in Sources */,
+				238EDC1AB26BE7C697EF58F21B949C88 /* EasyPeasy-dummy.m in Sources */,
+				55C78A8925CC7E1F2B5194398B914833 /* Item+AppKit.swift in Sources */,
+				BC5AB76802C3AF039CFB6102E2E89AD7 /* Item+UIKit.swift in Sources */,
+				1D2FF4D810821FA697B82E9BE08B029F /* Item.swift in Sources */,
+				9053EBA2CB510BFE30A7B32C12B8070E /* Node.swift in Sources */,
+				C3F1CF25A547A3761DD89DB494CECF60 /* NSLayoutGuide+Easy.swift in Sources */,
+				FE600361B8F8D819D07EE55AD1BA9BCF /* NSView+Easy.swift in Sources */,
+				1F98403FA7386FBD5C04706DA198E178 /* PositionAttribute+AppKit.swift in Sources */,
+				CCF8C5BDA51404F535B734C8FD7A5B0D /* PositionAttribute+UIKit.swift in Sources */,
+				42DDC034671649DDD83A834774825CBB /* PositionAttribute.swift in Sources */,
+				9D5800496526AA7608455476C53AE0A6 /* Priority.swift in Sources */,
+				7FD80237B2B9D85C9B5FAA2B95DADF7F /* ReferenceAttribute.swift in Sources */,
+				8E0E660019420B111D1B730A20D55AAE /* UILayoutGuide+Easy.swift in Sources */,
+				48AD84F7956F1A5E5DABAD3114576032 /* UIView+Easy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB883DB86401115C4F30712B7666575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C860DF1DA2767DC93B882EED79A30518 /* UIColor_Hex_Swift-dummy.m in Sources */,
+				1C3BF79F0332D9CD83DE6E2B37941C6D /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C038804225DC04BA9B1D1394B54588B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2307F639A41257AE81499048D8F87647 /* Pods-GooeyTabbarSampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F820B878316AFE4D911138077A85C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = 8F37468D736D124ACC8CB10737DC5D9E /* PBXContainerItemProxy */;
+		};
+		403A8C6875CA145387FCB80E0854E33D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D4253F87176115CA05D9012798046971 /* PureLayout */;
+			targetProxy = 7948CA1E56E1A3791D2652FC80C7D44F /* PBXContainerItemProxy */;
+		};
+		4A7CE8AA0D5D6E0DA2587DCBA3336044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = CAF4B9ECC83A1E676977163C06357235 /* PBXContainerItemProxy */;
+		};
+		77A8343AB2BE21B223E4B320FA8444F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D4253F87176115CA05D9012798046971 /* PureLayout */;
+			targetProxy = 79D05CA56F3371BF2DA41F0E991FC7B1 /* PBXContainerItemProxy */;
+		};
+		79AD0339D04477A5D1935F0BDBACE967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = 12209939F82AFC6E53A18F9850C4D1CB /* PBXContainerItemProxy */;
+		};
+		7A661B7C2394039F65A4EF1AEA174BCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayWandBasicElements;
+			target = 60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */;
+			targetProxy = 78E0260932D9507268D0E23A5875B990 /* PBXContainerItemProxy */;
+		};
+		8AD708AF4DFD6C6A3709F5AB1F6901F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = 303DE81E0635D5D1859AEF51E8BA5213 /* PBXContainerItemProxy */;
+		};
+		991ADFC065242BF2DEB644CF7135D932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = B77CD24D9F36C9D57048071C392172F3 /* PBXContainerItemProxy */;
+		};
+		9AEEF7F2E7F31109E91EE300F685DFAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayWandBasicElements;
+			target = 60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */;
+			targetProxy = CA65754205DBBC7E984C8764F576B124 /* PBXContainerItemProxy */;
+		};
+		A042BEA8DC5021C5995EB5DF49109C70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = C7906B8AD5A90A941DF42BD072DD3BF8 /* PBXContainerItemProxy */;
+		};
+		AF8E7EDB0DBABE748EA56AA815113858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = 6DB56459003149A9824165BBDD354CFC /* PBXContainerItemProxy */;
+		};
+		B504E2D4034B9A6D1E8C2E7346CF2B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = 94406B4AC10D2E14106AA71367FCE015 /* PBXContainerItemProxy */;
+		};
+		C06AC04E334C5BAA4E02CDE3E0564209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TtroGooeyTabbar;
+			target = A0978AC3B3860060647551DBE98E78C9 /* TtroGooeyTabbar */;
+			targetProxy = AEB0F73ABA81A0152D6CE398D03360D3 /* PBXContainerItemProxy */;
+		};
+		FD48DC9C13350DE5DE6D4EEDDA882555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = EBD836AD22AF9133E8484157316A2DC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03E5A17600B23CFD1E10833E7982A0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24FBA995E05932899E149C8F0B07871 /* PayWandBasicElements.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PayWandBasicElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31CDC30198B48C5C456D39F35840D7ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91104ECD21A7A3061C7C9DDC6D610B4 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3246CF238E91A0A9C93F001FFAF5E236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 697DFB96349CD9956989461AE1FFAA33 /* Pods-GooeyTabbarSample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GooeyTabbarSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GooeyTabbarSample/Pods-GooeyTabbarSample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GooeyTabbarSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CEC5A414E173FFBC65639DE81117A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F0B04B2F7688E9BF8C0AD9A8A3BF45D /* Pods-GooeyTabbarSampleUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GooeyTabbarSampleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GooeyTabbarSampleUITests/Pods-GooeyTabbarSampleUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GooeyTabbarSampleUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F19B8E565A2555E8DD0F0B60F6F0737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D917BAE9F318513C537CCE2A86D7B37 /* Pods-GooeyTabbarSampleTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GooeyTabbarSampleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GooeyTabbarSampleTests/Pods-GooeyTabbarSampleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GooeyTabbarSampleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47F099A0367C98D29E3462DE6E488077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96D33E5ABE6C02B086F2E95B5B25720 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48043D7587A64E662D4BDF2A61C54E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24FBA995E05932899E149C8F0B07871 /* PayWandBasicElements.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PayWandBasicElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DD7219CA057741A912ECDD13DE574D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E02C45ECD22CA06C6903F46B2991914 /* TtroGooeyTabbar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TtroGooeyTabbar/TtroGooeyTabbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TtroGooeyTabbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TtroGooeyTabbar/TtroGooeyTabbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TtroGooeyTabbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		506AF2D1B3064CB0895B84E13D456873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91104ECD21A7A3061C7C9DDC6D610B4 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6149B07C35973D9B7D41E9251406E1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C682807EA03FF8EA314161637B8B60E5 /* Pods-GooeyTabbarSampleTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GooeyTabbarSampleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GooeyTabbarSampleTests/Pods-GooeyTabbarSampleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GooeyTabbarSampleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AF4316603E3C54D8C88415E7BBF3CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC0A5099DF83522CC488AA867496DDA /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B18562E69B88A228891590CA062D3F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FEA300A351C70F17D83ED9E1A204C09 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F9070D888784D863BABFD10C75EF1CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F9E73B54E8E410D1B9C0047659DD812 /* Pods-GooeyTabbarSample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GooeyTabbarSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GooeyTabbarSample/Pods-GooeyTabbarSample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GooeyTabbarSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		897DC84CF0EB8FFB6A0D2B8B470E452F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E02C45ECD22CA06C6903F46B2991914 /* TtroGooeyTabbar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TtroGooeyTabbar/TtroGooeyTabbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TtroGooeyTabbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TtroGooeyTabbar/TtroGooeyTabbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TtroGooeyTabbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1FF4282BBFBABBDE54F548574E169B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96D33E5ABE6C02B086F2E95B5B25720 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF5E21903D1AC4ED0C77D22AE34A4BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FEA300A351C70F17D83ED9E1A204C09 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C826D22C88F763B5BCDE9FCAF0175038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA061CA62CD97C3890907FB78CE340E /* Pods-GooeyTabbarSampleUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GooeyTabbarSampleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GooeyTabbarSampleUITests/Pods-GooeyTabbarSampleUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GooeyTabbarSampleUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F11B974E67D3A4314D988D86E1962357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC0A5099DF83522CC488AA867496DDA /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0010BDB5A9EE9086CA2AB7377D5C9BBF /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5E21903D1AC4ED0C77D22AE34A4BBE /* Debug */,
+				6B18562E69B88A228891590CA062D3F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09077C94E191775E258073FA5A3C405C /* Build configuration list for PBXNativeTarget "EasyPeasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506AF2D1B3064CB0895B84E13D456873 /* Debug */,
+				31CDC30198B48C5C456D39F35840D7ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14825E7445490F537794F1313217B919 /* Build configuration list for PBXNativeTarget "Pods-GooeyTabbarSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3246CF238E91A0A9C93F001FFAF5E236 /* Debug */,
+				6F9070D888784D863BABFD10C75EF1CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D866DA0B0F9751548F96DDEB8965D20 /* Build configuration list for PBXNativeTarget "PayWandBasicElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48043D7587A64E662D4BDF2A61C54E34 /* Debug */,
+				03E5A17600B23CFD1E10833E7982A0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58BCB9C323D5F93B6BA0A20E49D66656 /* Build configuration list for PBXNativeTarget "TtroGooeyTabbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897DC84CF0EB8FFB6A0D2B8B470E452F /* Debug */,
+				4DD7219CA057741A912ECDD13DE574D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC1264DAC2A1E26130EB05F040CCB9C3 /* Build configuration list for PBXNativeTarget "Pods-GooeyTabbarSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEC5A414E173FFBC65639DE81117A5D /* Debug */,
+				C826D22C88F763B5BCDE9FCAF0175038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5E209CC24F5AD89AB9E769E0EF11BE /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F099A0367C98D29E3462DE6E488077 /* Debug */,
+				A1FF4282BBFBABBDE54F548574E169B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCCBAB2128D8412BECD5316A0D5FA094 /* Build configuration list for PBXNativeTarget "Pods-GooeyTabbarSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6149B07C35973D9B7D41E9251406E1DC /* Debug */,
+				3F19B8E565A2555E8DD0F0B60F6F0737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E944E25CB18BDFFA85241F0E5A26793E /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF4316603E3C54D8C88415E7BBF3CAB /* Debug */,
+				F11B974E67D3A4314D988D86E1962357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
