@@ -104,7 +104,7 @@ class AnimatedButton: UIButton, CAAnimationDelegate
             opened = false
             
             let rotation_second = CAKeyframeAnimation(keyPath: "transform.rotation.z")
-            rotation_second.duration = 0.3
+            rotation_second.duration = 0.6
             rotation_second.values = [45 * (M_PI/180),70 * (M_PI/180),0]
             rotation_second.keyTimes = [0.0,0.4,1.0]
             rotation_second.fillMode = kCAFillModeForwards
@@ -113,23 +113,13 @@ class AnimatedButton: UIButton, CAAnimationDelegate
             secondLine.add(rotation_second, forKey: "rotation_second_close")
             
             let rotation_first = CAKeyframeAnimation(keyPath: "transform.rotation.z")
-            rotation_first.duration = 0.4
+            rotation_first.duration = 0.6
             rotation_first.values = [135 * (M_PI/180),170 * (M_PI/180),0]
             rotation_first.keyTimes = [0.0,0.4,1.0]
             rotation_first.fillMode = kCAFillModeForwards
             rotation_first.isRemovedOnCompletion = false
             rotation_first.delegate = self
             firstLine.add(rotation_first, forKey: "rotation_first_close")
-            
-            let fade = CABasicAnimation(keyPath: "opacity")
-            fade.duration = 0.3
-            fade.delegate = self
-            fade.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-            fade.toValue = 1
-            fade.fromValue = 0
-            fade.fillMode = kCAFillModeForwards
-            fade.isRemovedOnCompletion = false
-            thirdLine.add(fade, forKey: "fadeIn")
             
         }
         
@@ -180,6 +170,16 @@ class AnimatedButton: UIButton, CAAnimationDelegate
             moveDown.fillMode = kCAFillModeForwards
             moveDown.isRemovedOnCompletion = false
             firstLine.add(moveDown, forKey: "moveUp_1")
+            
+            let fade = CABasicAnimation(keyPath: "opacity")
+            fade.duration = 0.2
+            fade.delegate = self
+            fade.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+            fade.toValue = 1
+            fade.fromValue = 0
+            fade.fillMode = kCAFillModeForwards
+            fade.isRemovedOnCompletion = false
+            thirdLine.add(fade, forKey: "fadeIn")
             
         }
         
