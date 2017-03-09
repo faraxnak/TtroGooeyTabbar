@@ -24,10 +24,10 @@ class GooeyTabbarMenuItem : UIView {
     
     var leftConst : NSLayoutConstraint!
     
-    typealias Tapped = () -> ()
+    typealias Tapped = () -> (Bool)
     var tapped : Tapped!
     
-    convenience init(name : String, icon : UIImage?, onTap: @escaping () -> ()){
+    convenience init(name : String, icon : UIImage?, onTap: @escaping () -> (Bool)){
         self.init(frame : CGRect.zero)
         nameLabel = UILabel()
         nameLabel.textColor = UIColor.TtroColors.white.color
@@ -62,9 +62,10 @@ class GooeyTabbarMenuItem : UIView {
     
     func onTap(_ sender : AnyObject){
         //delegate.gooeyTabbarMenuItem(itemSelected: self)
-        tapped()
-        nameLabel.textColor = UIColor.TtroColors.cyan.color
-        iconView.tintColor = UIColor.TtroColors.cyan.color
+        if (tapped()){
+            nameLabel.textColor = UIColor.TtroColors.cyan.color
+            iconView.tintColor = UIColor.TtroColors.cyan.color
+        }
     }
     
     override init(frame: CGRect) {

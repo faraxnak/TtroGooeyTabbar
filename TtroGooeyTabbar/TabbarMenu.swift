@@ -55,6 +55,8 @@ public class TabbarMenu: UIView{
     var tabNames = [String]()
     var tabIcons = [UIImage?]()
     
+    var isAnimating = false;
+    
     public init(tabbarHeight : CGFloat, superVC : UIViewController, tabNames : [String], tabIcons : [UIImage?])
     {
         tabbarheight = tabbarHeight
@@ -143,6 +145,8 @@ public class TabbarMenu: UIView{
         if animateButton!.animating {
             return
         }
+        self.isAnimating = true
+        
         if !opened {
             opened = true
             
@@ -160,13 +164,14 @@ public class TabbarMenu: UIView{
                     self.blurView.alpha = 1.0
                     }, completion: nil)
                 
-                UIView.animate(withDuration: 1.0, delay: 0.15, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.0, options: .curveEaseOut, animations: { () -> Void in
+                UIView.animate(withDuration: 0.5, delay: 0.15, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.0, options: .curveEaseOut, animations: { () -> Void in
                     self.springRect.center = CGPoint(x: self.springRect.center.x, y: 100)
                     }, completion: { (finish) -> Void in
                         self.finishAnimation()
+                        self.isAnimating = false
                 })
             }
-        }else{
+        } else {
             /**
              *  收缩
              */
@@ -261,14 +266,18 @@ extension TabbarMenu {
     public func initButtons(){
         for i in 0..<delegate.tabbarMenu(numberOfMenuItems: self) {
             let item = GooeyTabbarMenuItem(name: tabNames[i], icon: tabIcons[i], onTap: {
-                if (self.opened){
+                if (self.opened && !self.animateButton!.animating && !self.isAnimating){
                     self.delegate.tabbarMenu(self, selectedIndex: i)
                     self.animateButton?.animate()
                     for item in self.items {
                         item.nameLabel.textColor = UIColor.TtroColors.white.color
                         item.iconView.tintColor = UIColor.TtroColors.white.color
                     }
+                    return true
+                } else {
+                    return false
                 }
+                
             })
             //button.setTitle("test", forState: .Normal)
             //button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
