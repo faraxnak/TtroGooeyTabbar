@@ -43,6 +43,7 @@ public class TabbarMenu: UIView{
     //let TOPSPACE : CGFloat = 200 //留白
     
     let topSpace : CGFloat = UIScreen.main.bounds.height/4
+    var offset : CGFloat = 0
     
     fileprivate var tabbarheight : CGFloat? //tabbar高度
     
@@ -59,10 +60,15 @@ public class TabbarMenu: UIView{
     
     public init(tabbarHeight : CGFloat, superVC : UIViewController, tabNames : [String], tabIcons : [UIImage?])
     {
+        let statusBarFrame = UIApplication.shared.statusBarFrame
+        if (!UIApplication.shared.isStatusBarHidden || UIApplication.shared.statusBarFrame.height > 30){
+            offset = UIApplication.shared.statusBarFrame.height - 20
+        }
+        
         tabbarheight = tabbarHeight
         terminalFrame = CGRect(x: 0, y: topSpace, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
-        initialFrame = CGRect(x: 0, y: UIScreen.main.bounds.height - tabbarHeight, width: terminalFrame!.width, height: terminalFrame!.height) //TOPSPACE
-        animatingInitialFrame = CGRect(x: 0, y: UIScreen.main.bounds.height - tabbarHeight - topSpace, width: terminalFrame!.width, height: terminalFrame!.height)
+        initialFrame = CGRect(x: 0, y: UIScreen.main.bounds.height - tabbarHeight - offset, width: terminalFrame!.width, height: terminalFrame!.height) //TOPSPACE
+        animatingInitialFrame = CGRect(x: 0, y: UIScreen.main.bounds.height - tabbarHeight - topSpace - offset, width: terminalFrame!.width, height: terminalFrame!.height)
         animatingTerminalFrame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
         super.init(frame: initialFrame!)
         //super.init(frame : terminalFrame!)
@@ -72,6 +78,7 @@ public class TabbarMenu: UIView{
         self.tabNames = tabNames
         self.tabIcons = tabIcons
         setUpViews()
+        
         //initButtons()
     }
     
@@ -120,7 +127,6 @@ public class TabbarMenu: UIView{
         superView.addSubview(blurView)
         
         self.backgroundColor = UIColor.clear
-//        backgroundColor = UIColor.brownColor()
         superView.addSubview(self)
         
         normalRect = UIView(frame: CGRect(x: 0, y: UIScreen.main.bounds.size.height - 30 - 50, width: 30, height: 30))
