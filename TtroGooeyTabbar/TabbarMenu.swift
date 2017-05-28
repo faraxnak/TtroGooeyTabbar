@@ -268,6 +268,17 @@ public class TabbarMenu: UIView{
 
 //MARK add menu buttons
 extension TabbarMenu {
+    public func changeSelectedButton(newSelectedIndex : Int){
+        for (index ,item) in self.items.enumerated() {
+            if (index != newSelectedIndex){
+                item.nameLabel.textColor = UIColor.TtroColors.white.color
+                item.iconView.tintColor = UIColor.TtroColors.white.color
+            } else {
+                item.nameLabel.textColor = UIColor.TtroColors.cyan.color
+                item.iconView.tintColor = UIColor.TtroColors.cyan.color
+            }
+        }
+    }
     
     public func initButtons(){
         for i in 0..<delegate.tabbarMenu(numberOfMenuItems: self) {
