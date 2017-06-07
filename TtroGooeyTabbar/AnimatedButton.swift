@@ -105,7 +105,7 @@ class AnimatedButton: UIButton, CAAnimationDelegate
             
             let rotation_second = CAKeyframeAnimation(keyPath: "transform.rotation.z")
             rotation_second.duration = 0.6
-            rotation_second.values = [45 * (M_PI/180),70 * (M_PI/180),0]
+            rotation_second.values = [45 * (Double.pi/180),70 * (Double.pi/180),0]
             rotation_second.keyTimes = [0.0,0.4,1.0]
             rotation_second.fillMode = kCAFillModeForwards
             rotation_second.isRemovedOnCompletion = false
@@ -114,7 +114,7 @@ class AnimatedButton: UIButton, CAAnimationDelegate
             
             let rotation_first = CAKeyframeAnimation(keyPath: "transform.rotation.z")
             rotation_first.duration = 0.6
-            rotation_first.values = [135 * (M_PI/180),170 * (M_PI/180),0]
+            rotation_first.values = [135 * (Double.pi/180),170 * (Double.pi/180),0]
             rotation_first.keyTimes = [0.0,0.4,1.0]
             rotation_first.fillMode = kCAFillModeForwards
             rotation_first.isRemovedOnCompletion = false
@@ -135,7 +135,7 @@ class AnimatedButton: UIButton, CAAnimationDelegate
         if anim == secondLine.animation(forKey: "moveUp_2") {
             let rotation_second = CAKeyframeAnimation(keyPath: "transform.rotation.z")
             rotation_second.duration = 0.5
-            rotation_second.values = [0,70 * (M_PI/180),45 * (M_PI/180)]
+            rotation_second.values = [0,70 * (Double.pi/180),45 * (Double.pi/180)]
             rotation_second.keyTimes = [0.0,0.6,1.0]
             rotation_second.fillMode = kCAFillModeForwards
             rotation_second.isRemovedOnCompletion = false
@@ -144,7 +144,7 @@ class AnimatedButton: UIButton, CAAnimationDelegate
         }else if anim == firstLine.animation(forKey: "moveDown_1") {
             let rotation_first = CAKeyframeAnimation(keyPath: "transform.rotation.z")
             rotation_first.duration = 0.6
-            rotation_first.values = [0,170 * (M_PI/180),135 * (M_PI/180)]
+            rotation_first.values = [0,170 * (Double.pi/180),135 * (Double.pi/180)]
             rotation_first.keyTimes = [0.0,0.6,1.0]
             rotation_first.fillMode = kCAFillModeForwards
             rotation_first.isRemovedOnCompletion = false

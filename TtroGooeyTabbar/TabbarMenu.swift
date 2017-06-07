@@ -60,7 +60,7 @@ public class TabbarMenu: UIView{
     
     public init(tabbarHeight : CGFloat, superVC : UIViewController, tabNames : [String], tabIcons : [UIImage?])
     {
-        let statusBarFrame = UIApplication.shared.statusBarFrame
+//        let statusBarFrame = UIApplication.shared.statusBarFrame
         if (!UIApplication.shared.isStatusBarHidden || UIApplication.shared.statusBarFrame.height > 30){
             offset = UIApplication.shared.statusBarFrame.height - 20
         }
