@@ -302,11 +302,11 @@ extension TabbarMenu {
             item.translatesAutoresizingMaskIntoConstraints = false
             addSubview(item)
             if (i == 0){
-                item <- Top(15).to(animateButton!)
+                item <- Top(5).to(animateButton!)
                 item.nameLabel.textColor = UIColor.TtroColors.cyan.color
                 item.iconView.tintColor = UIColor.TtroColors.cyan.color
             } else {
-                item <- Top(15).to(items[i-1])
+                item <- Top(20).to(items[i-1])
             }
             
 //            if (i == delegate.tabbarMenu(menuIndex: self)){
