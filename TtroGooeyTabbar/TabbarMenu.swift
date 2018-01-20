@@ -58,6 +58,10 @@ public class TabbarMenu: UIView{
     
     var isAnimating = false;
     
+    var scrollView : UIScrollView!
+    
+    
+    
     public init(tabbarHeight : CGFloat, superVC : UIViewController, tabNames : [String], tabIcons : [UIImage?])
     {
 //        let statusBarFrame = UIApplication.shared.statusBarFrame
@@ -144,6 +148,20 @@ public class TabbarMenu: UIView{
         animateButton!.didTapped = { (button) -> () in
             self.triggerAction()
         }
+        
+        scrollView = UIScrollView()
+        addSubview(scrollView)
+        scrollView <- [
+            Top(5).to(animateButton!),
+            Width().like(self),
+            Bottom(tabbarheight!).to(self, .bottom),
+            CenterX()
+        ]
+        
+        //scrollView.contentSize = CGSize(width: 400, height: 1000)
+        
+        scrollView.indicatorStyle = .white
+        scrollView.isScrollEnabled = true
     }
     
     func triggerAction()
@@ -296,37 +314,34 @@ extension TabbarMenu {
                 }
                 
             })
-            //button.setTitle("test", forState: .Normal)
-            //button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-            //        item.backgroundColor = UIColor.TtroColors.LightBlue.color.colorWithAlphaComponent(0.2)
-            item.translatesAutoresizingMaskIntoConstraints = false
-            addSubview(item)
+            //item.translatesAutoresizingMaskIntoConstraints = false
+            scrollView.addSubview(item)
             if (i == 0){
-                item <- Top(5).to(animateButton!)
+                item <- Top() //Top(5).to(animateButton!)
                 item.nameLabel.textColor = UIColor.TtroColors.cyan.color
                 item.iconView.tintColor = UIColor.TtroColors.cyan.color
             } else {
                 item <- Top(20).to(items[i-1])
             }
             
-//            if (i == delegate.tabbarMenu(menuIndex: self)){
-//                item.nameLabel.textColor = UIColor.TtroColors.Cyan.color
-//            }
             item <- [
                 Width().like(self),
                 Height(40)
             ]
+            
             var constant = frame.width/3
             item.alpha = 0.0
             if (opened){
                 constant = 0.0
                 item.alpha = 1
             }
-            item.leftConst = item.leftAnchor.constraint(equalTo: leftAnchor, constant: constant)
+            item.leftConst = item.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: constant)
             item.leftConst.isActive = true
             
             items.append(item)
         }
+        
+        //items.last! <- Bottom().to(scrollView, .bottom)
     }
     
     func showMenuButtons(){
@@ -361,6 +376,17 @@ extension TabbarMenu {
     
     public func animateMenu(){
         animateButton?.animate()
+    }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        if let item = items.first,
+            scrollView != nil {
+            let height = item.frame.height * CGFloat(items.count) + CGFloat(items.count * 20)
+            scrollView.contentSize = CGSize(width: item.frame.width,
+                                            height: height)
+            scrollView.flashScrollIndicators()
+        }
     }
 }
 
