@@ -151,12 +151,12 @@ public class TabbarMenu: UIView{
         
         scrollView = UIScrollView()
         addSubview(scrollView)
-        scrollView <- [
+        scrollView.easy.layout([
             Top(5).to(animateButton!),
             Width().like(self),
             Bottom(tabbarheight!).to(self, .bottom),
             CenterX()
-        ]
+        ])
         
         //scrollView.contentSize = CGSize(width: 400, height: 1000)
         
@@ -317,17 +317,17 @@ extension TabbarMenu {
             //item.translatesAutoresizingMaskIntoConstraints = false
             scrollView.addSubview(item)
             if (i == 0){
-                item <- Top() //Top(5).to(animateButton!)
+                item.easy.layout(Top()) //Top(5).to(animateButton!)
                 item.nameLabel.textColor = UIColor.TtroColors.cyan.color
                 item.iconView.tintColor = UIColor.TtroColors.cyan.color
             } else {
-                item <- Top(20).to(items[i-1])
+                item.easy.layout(Top(20).to(items[i-1]))
             }
             
-            item <- [
+            item.easy.layout([
                 Width().like(self),
                 Height(40)
-            ]
+            ])
             
             var constant = frame.width/3
             item.alpha = 0.0

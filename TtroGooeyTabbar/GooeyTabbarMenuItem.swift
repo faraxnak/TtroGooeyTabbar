@@ -37,22 +37,22 @@ class GooeyTabbarMenuItem : UIView {
         iconView.contentMode = .scaleAspectFit
         iconView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(iconView)
-        iconView <- [
+        iconView.easy.layout([
             Left(60),
             CenterY(),
-            Height(*0.9).like(self).with(Priority.mediumPriority),
-            Height(<=40).with(Priority.highPriority),
+            Height(*0.9).like(self).with(Priority.medium),
+            Height(<=40),
             Width().like(iconView, .height)
-        ]
+        ])
         iconView.image = (iconView.image?.withRenderingMode(.alwaysTemplate))!
         iconView.tintColor = UIColor.TtroColors.white.color
         
         addSubview(nameLabel)
-        nameLabel <- [
+        nameLabel.easy.layout([
             Left(10).to(iconView),
             CenterY().to(iconView),
             Height().like(iconView)
-        ]
+        ])
         
         tapGR = UITapGestureRecognizer(target: self, action: #selector(self.onTap(_:)))
         addGestureRecognizer(tapGR)
