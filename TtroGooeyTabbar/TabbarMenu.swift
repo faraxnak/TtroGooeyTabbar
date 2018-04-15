@@ -40,6 +40,8 @@ public class TabbarMenu: UIView{
     fileprivate var animatingTerminalFrame : CGRect?
     var animateButton : AnimatedButton?
     
+    var scrollDownButton : UIButton?
+    
     //let TOPSPACE : CGFloat = 200 //留白
     
     let topSpace : CGFloat = UIScreen.main.bounds.height/4
@@ -55,6 +57,7 @@ public class TabbarMenu: UIView{
     
     var tabNames = [String]()
     var tabIcons = [UIImage?]()
+    var tabAvailablity = [Bool]()
     
     var isAnimating = false;
     
@@ -62,7 +65,7 @@ public class TabbarMenu: UIView{
     
     
     
-    public init(tabbarHeight : CGFloat, superVC : UIViewController, tabNames : [String], tabIcons : [UIImage?])
+    public init(tabbarHeight : CGFloat, superVC : UIViewController, tabNames : [String], tabIcons : [UIImage?], tabAvailablity: [Bool])
     {
 //        let statusBarFrame = UIApplication.shared.statusBarFrame
         if (!UIApplication.shared.isStatusBarHidden || UIApplication.shared.statusBarFrame.height > 30){
@@ -81,6 +84,7 @@ public class TabbarMenu: UIView{
         //delegate = superVC
         self.tabNames = tabNames
         self.tabIcons = tabIcons
+        self.tabAvailablity = tabAvailablity
         setUpViews()
         
         //initButtons()
@@ -155,6 +159,7 @@ public class TabbarMenu: UIView{
             Top(5).to(animateButton!),
             Width().like(self),
             Bottom(tabbarheight!).to(self, .bottom),
+//            Bottom().to(self, .bottom),
             CenterX()
         ])
         
@@ -162,6 +167,22 @@ public class TabbarMenu: UIView{
         
         scrollView.indicatorStyle = .white
         scrollView.isScrollEnabled = true
+        
+        scrollDownButton = UIButton(type: .custom)
+        addSubview(scrollDownButton!)
+        scrollDownButton?.easy.layout( [
+            Height(tabbarheight!),
+            //Bottom(),
+//            Top().to(containerView),
+            Bottom(),
+            Width().like(self),
+            CenterX()
+            ])
+        //openButton.backgroundColor = UIColor.orange
+        scrollDownButton?.addTarget(self, action: #selector(scrollDownMenu), for: UIControlEvents.touchUpInside)
+        scrollDownButton?.setImage(#imageLiteral(resourceName: "down"), for: UIControlState.normal)
+        scrollDownButton?.imageView?.contentMode = .scaleAspectFit
+        scrollDownButton?.isHidden = true
     }
     
     func triggerAction()
@@ -300,7 +321,7 @@ extension TabbarMenu {
     
     public func initButtons(){
         for i in 0..<delegate.tabbarMenu(numberOfMenuItems: self) {
-            let item = GooeyTabbarMenuItem(name: tabNames[i], icon: tabIcons[i], onTap: {
+            let item = GooeyTabbarMenuItem(name: tabNames[i], icon: tabIcons[i], isAvailable: tabAvailablity[safe: i] ?? false, onTap: {
                 if (self.opened && !self.animateButton!.animating && !self.isAnimating){
                     self.delegate.tabbarMenu(self, selectedIndex: i)
                     self.animateButton?.animate()
@@ -374,8 +395,18 @@ extension TabbarMenu {
         }
     }
     
-    public func animateMenu(){
-        animateButton?.animate()
+    public func scrollDownMenu(_ sender: UIButton){
+        scrollView.scrollToBottom()
+    }
+    
+    public func openMenu(_ sender: UIButton){
+        if (opened){
+            if scrollDownButton?.isHidden != true {
+                scrollDownMenu(sender)
+            }
+        } else {
+            animateButton?.animate()
+        }
     }
     
     public override func layoutSubviews() {
@@ -386,6 +417,9 @@ extension TabbarMenu {
             scrollView.contentSize = CGSize(width: item.frame.width,
                                             height: height)
             scrollView.flashScrollIndicators()
+            if (scrollView.frame.height < scrollView.contentSize.height) {
+                scrollDownButton?.isHidden = false
+            }
         }
     }
 }

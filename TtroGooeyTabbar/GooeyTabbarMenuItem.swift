@@ -19,7 +19,7 @@ class GooeyTabbarMenuItem : UIView {
     
     var iconView : UIImageView!
     var nameLabel : UILabel!
-    fileprivate var tapGR : UITapGestureRecognizer!
+//    fileprivate var tapGR : UITapGestureRecognizer!
     var delegate : GooeyTabbarMenuItemDelegate!
     
     var leftConst : NSLayoutConstraint!
@@ -27,7 +27,7 @@ class GooeyTabbarMenuItem : UIView {
     typealias Tapped = () -> (Bool)
     var tapped : Tapped!
     
-    convenience init(name : String, icon : UIImage?, onTap: @escaping () -> (Bool)){
+    convenience init(name : String, icon : UIImage?, isAvailable : Bool = true, onTap: @escaping () -> (Bool)){
         self.init(frame : CGRect.zero)
         nameLabel = UILabel()
         nameLabel.textColor = UIColor.TtroColors.white.color
@@ -54,9 +54,25 @@ class GooeyTabbarMenuItem : UIView {
             Height().like(iconView)
         ])
         
-        tapGR = UITapGestureRecognizer(target: self, action: #selector(self.onTap(_:)))
-        addGestureRecognizer(tapGR)
-        
+        if isAvailable {
+            let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.onTap(_:)))
+            addGestureRecognizer(tapGR)
+        } else {
+            let comingSoonLabel = TtroLabel(font: UIFont.TtroPayWandFonts.regular1.font, color: UIColor.TtroColors.darkBlue.color)
+            comingSoonLabel.text = " coming soon "
+            comingSoonLabel.backgroundColor = UIColor.TtroColors.cyan.color
+            comingSoonLabel.layer.cornerRadius = 5
+            comingSoonLabel.layer.masksToBounds = true
+            addSubview(comingSoonLabel)
+            comingSoonLabel.easy.layout([
+                Right(20),
+                //            Left(10).to(nameLabel),
+                CenterY().to(iconView),
+                Height(20),//.like(iconView),
+                Width(*0.2).like(self)
+                ])
+            comingSoonLabel.adjustsFontSizeToFitWidth = true
+        }
         tapped = onTap
     }
     
