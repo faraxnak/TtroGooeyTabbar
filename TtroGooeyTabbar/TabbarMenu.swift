@@ -321,7 +321,7 @@ extension TabbarMenu {
     
     public func initButtons(){
         for i in 0..<delegate.tabbarMenu(numberOfMenuItems: self) {
-            let item = GooeyTabbarMenuItem(name: tabNames[i], icon: tabIcons[i], isAvailable: tabAvailablity[safe: i] ?? false, onTap: {
+            let item = GooeyTabbarMenuItem(name: tabNames[i], icon: tabIcons[i], isAvailable: tabAvailablity[safee: i] ?? false, onTap: {
                 if (self.opened && !self.animateButton!.animating && !self.isAnimating){
                     self.delegate.tabbarMenu(self, selectedIndex: i)
                     self.animateButton?.animate()
