@@ -399,7 +399,7 @@ extension TabbarMenu {
         scrollView.scrollToBottom()
     }
     
-    public func openMenu(_ sender: UIButton){
+    @objc public func openMenu(_ sender: UIButton){
         if (opened){
             if scrollDownButton?.isHidden != true {
                 scrollDownMenu(sender)
