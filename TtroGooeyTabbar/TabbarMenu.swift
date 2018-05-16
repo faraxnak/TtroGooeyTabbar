@@ -395,7 +395,7 @@ extension TabbarMenu {
         }
     }
     
-    public func scrollDownMenu(_ sender: UIButton){
+    @objc public func scrollDownMenu(_ sender: UIButton){
         scrollView.scrollToBottom()
     }
     

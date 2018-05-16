@@ -76,7 +76,7 @@ class GooeyTabbarMenuItem : UIView {
         tapped = onTap
     }
     
-    func onTap(_ sender : AnyObject){
+    @objc func onTap(_ sender : AnyObject){
         //delegate.gooeyTabbarMenuItem(itemSelected: self)
         if (tapped()){
             nameLabel.textColor = UIColor.TtroColors.cyan.color

@@ -7,6 +7,7 @@ target 'TtroGooeyTabbar' do
 
   # Pods for TtroGooeyTabbar
   pod 'EasyPeasy'
-  pod 'PayWandBasicElements', :path => '../PayWandBasicElements'
+  pod 'PayWandModelProtocols', :path => '../PayWandModelProtocols/'
+  pod 'PayWandBasicElements', :path => '../PayWandBasicElements/'
 
 end
