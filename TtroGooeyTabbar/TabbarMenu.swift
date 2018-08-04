@@ -63,7 +63,16 @@ public class TabbarMenu: UIView{
     
     var scrollView : UIScrollView!
     
-    
+    fileprivate var animateButtonRTLframe : CGRect {
+        get {
+            return CGRect(x: UIScreen.main.bounds.size.width - 50, y: (tabbarheight! - 30)/2, width: 50, height: 30)
+        }
+    }
+    fileprivate var animateButtonLTRframe : CGRect {
+        get {
+            return CGRect(x: 0, y: (tabbarheight! - 30)/2, width: 50, height: 30)
+        }
+    }
     
     public init(tabbarHeight : CGFloat, superVC : UIViewController, tabNames : [String], tabIcons : [UIImage?], tabAvailablity: [Bool])
     {
@@ -146,8 +155,13 @@ public class TabbarMenu: UIView{
         springRect.backgroundColor = UIColor.yellow
         springRect.isHidden = true
         superView.addSubview(springRect)
+
+        if isRightToLeft{
+            animateButton = AnimatedButton(frame: animateButtonRTLframe)
+        } else {
+            animateButton = AnimatedButton(frame: animateButtonLTRframe)
+        }
         
-        animateButton = AnimatedButton(frame: CGRect(x: 0, y: (tabbarheight! - 30)/2, width: 50, height: 30))
         self.addSubview(animateButton!)
         animateButton!.didTapped = { (button) -> () in
             self.triggerAction()
@@ -257,12 +271,14 @@ public class TabbarMenu: UIView{
         self.blurView.isHidden = true
         self.frame = self.initialFrame!
         self.setNeedsDisplay()
-        self.animateButton?.frame = CGRect(x: 0, y: (self.tabbarheight! - 30)/2, width: 50, height: 30)
+        self.animateButton?.frame = isRightToLeft ? animateButtonRTLframe : animateButtonLTRframe
     }
     
     func setStartAnimationFrames() {
         self.frame = animatingInitialFrame!
-        animateButton?.frame = CGRect(x: 0, y: topSpace + (tabbarheight! - 30)/2, width: 50, height: 30)
+        animateButton?.frame = isRightToLeft ?
+            CGRect(x: UIScreen.main.bounds.size.width - 50, y: topSpace + (tabbarheight! - 30)/2, width: 50, height: 30) :
+            CGRect(x: 0, y: topSpace + (tabbarheight! - 30)/2, width: 50, height: 30)
         self.setNeedsDisplay()
         self.blurView.isHidden = false
     }
@@ -350,14 +366,14 @@ extension TabbarMenu {
                 Height(40)
             ])
             
-            var constant = frame.width/3
+            var constant = isRightToLeft ? -1 * frame.width/3 : frame.width/3
             item.alpha = 0.0
             if (opened){
                 constant = 0.0
                 item.alpha = 1
             }
-            item.leftConst = item.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: constant)
-            item.leftConst.isActive = true
+            item.leadingConst = item.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: constant)
+            item.leadingConst.isActive = true
             
             items.append(item)
         }
@@ -372,7 +388,7 @@ extension TabbarMenu {
         let duration = 0.3
         for i in 0..<items.count {
             UIView.animate(withDuration: duration, delay: delay * Double(i) + baseDelay, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.curveEaseOut, animations: {
-                self.items[i].leftConst.constant = 0
+                self.items[i].leadingConst.constant = 0
                 self.layoutIfNeeded()
                 self.items[i].alpha = 1
                 }, completion: nil)
@@ -386,7 +402,7 @@ extension TabbarMenu {
         let duration = 0.35
         for i in stride(from: (items.count - 1), to: -1, by: -1) {
             UIView.animate(withDuration: duration, delay: delay * Double(items.count - 1 - i), usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.curveLinear, animations: {
-                self.items[i].leftConst.constant = self.frame.width/3
+                self.items[i].leadingConst.constant = self.isRightToLeft ? -1 * self.frame.width/3 : self.frame.width/3 //self.frame.width/3 // 
                 self.layoutIfNeeded()
                 self.items[i].alpha = 0
                 }, completion: { (_) in

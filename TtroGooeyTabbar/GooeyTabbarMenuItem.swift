@@ -22,7 +22,7 @@ class GooeyTabbarMenuItem : UIView {
 //    fileprivate var tapGR : UITapGestureRecognizer!
     var delegate : GooeyTabbarMenuItemDelegate!
     
-    var leftConst : NSLayoutConstraint!
+    var leadingConst : NSLayoutConstraint!
     
     typealias Tapped = () -> (Bool)
     var tapped : Tapped!
@@ -38,7 +38,7 @@ class GooeyTabbarMenuItem : UIView {
         iconView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(iconView)
         iconView.easy.layout([
-            Left(60),
+            Leading(60),
             CenterY(),
             Height(*0.9).like(self).with(Priority.medium),
             Height(<=40),
@@ -49,7 +49,7 @@ class GooeyTabbarMenuItem : UIView {
         
         addSubview(nameLabel)
         nameLabel.easy.layout([
-            Left(10).to(iconView),
+            Leading(10).to(iconView),
             CenterY().to(iconView),
             Height().like(iconView)
         ])
@@ -65,7 +65,7 @@ class GooeyTabbarMenuItem : UIView {
             comingSoonLabel.layer.masksToBounds = true
             addSubview(comingSoonLabel)
             comingSoonLabel.easy.layout([
-                Right(20),
+                Trailing(20),
                 //            Left(10).to(nameLabel),
                 CenterY().to(iconView),
                 Height(20),//.like(iconView),
