@@ -32,6 +32,7 @@ class GooeyTabbarMenuItem : UIView {
         nameLabel = UILabel()
         nameLabel.textColor = UIColor.TtroColors.white.color
         nameLabel.text = name
+        nameLabel.font = UIFont.TtroPayWandFonts.regular2.font
         
         iconView = UIImageView(image: icon)
         iconView.contentMode = .scaleAspectFit

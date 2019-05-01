@@ -268,10 +268,14 @@ public class TabbarMenu: UIView{
     }
     
     func setEndAnimationFrames() {
-        self.blurView.isHidden = true
-        self.frame = self.initialFrame!
-        self.setNeedsDisplay()
-        self.animateButton?.frame = isRightToLeft ? animateButtonRTLframe : animateButtonLTRframe
+        blurView.isHidden = true
+        frame = self.initialFrame!
+        setNeedsDisplay()
+        animateButton?.frame = isRightToLeft ? animateButtonRTLframe : animateButtonLTRframe
+    }
+    
+    public func setButtonFrameAfterViewLayout() {
+        animateButton?.frame = isRightToLeft ? animateButtonRTLframe : animateButtonLTRframe
     }
     
     func setStartAnimationFrames() {

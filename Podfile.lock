@@ -1,11 +1,29 @@
 PODS:
   - EasyPeasy (1.7.0)
+  - Localize-Swift (2.0.0)
   - PayWandBasicElements (0.0.7):
     - EasyPeasy
+    - Localize-Swift
     - PayWandModelProtocols
+    - SwifterSwift
     - SwiftyButton
     - UIColor_Hex_Swift
   - PayWandModelProtocols (0.0.2)
+  - SwifterSwift (4.3.0):
+    - SwifterSwift/AppKit (= 4.3.0)
+    - SwifterSwift/CoreGraphics (= 4.3.0)
+    - SwifterSwift/CoreLocation (= 4.3.0)
+    - SwifterSwift/Foundation (= 4.3.0)
+    - SwifterSwift/MapKit (= 4.3.0)
+    - SwifterSwift/SwiftStdlib (= 4.3.0)
+    - SwifterSwift/UIKit (= 4.3.0)
+  - SwifterSwift/AppKit (4.3.0)
+  - SwifterSwift/CoreGraphics (4.3.0)
+  - SwifterSwift/CoreLocation (4.3.0)
+  - SwifterSwift/Foundation (4.3.0)
+  - SwifterSwift/MapKit (4.3.0)
+  - SwifterSwift/SwiftStdlib (4.3.0)
+  - SwifterSwift/UIKit (4.3.0)
   - SwiftyButton (0.8.0)
   - UIColor_Hex_Swift (4.0.1)
 
@@ -15,8 +33,10 @@ DEPENDENCIES:
   - PayWandModelProtocols (from `../PayWandModelProtocols/`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - EasyPeasy
+    - Localize-Swift
+    - SwifterSwift
     - SwiftyButton
     - UIColor_Hex_Swift
 
@@ -28,11 +48,13 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   EasyPeasy: 2f2785ed78c6f9e9045221f2ff317730e7321bff
-  PayWandBasicElements: fa0f3860c9db877f6113e868cfdf789b2aed9ca8
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  PayWandBasicElements: 6390870ec5370f11fccd036ac4b45746d3be8c61
   PayWandModelProtocols: 76f0a4a7eb73f793dd6a59b362ff392d52bdd084
+  SwifterSwift: f3fce2b9fc5b9d8fda6eec33825e5243c60aebba
   SwiftyButton: 093e3fe2becf3ae31c0f6c1c6987b79a93fb3ecb
   UIColor_Hex_Swift: c5ff88470499383b8fd85302d59344bb24ba9436
 
 PODFILE CHECKSUM: b5e816da7cb0e0bc2d633f01c54514ae2b62ff1a
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2
